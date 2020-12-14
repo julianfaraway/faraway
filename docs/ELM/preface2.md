@@ -7,29 +7,31 @@ Linear models are central to the practice of statistics. They are part
 of the core knowledge expected of any applied statistician. Linear
 models are the foundation of a broad range of statistical methodologies;
 this book is a survey of techniques that grow from a linear model.
-Our starting point is the regression model with response $y$ and
-predictors $x_1, \ldots x_p$. The model takes the form:
+Our starting point is the regression model with response *y* and
+predictors $$x_1, \ldots x_p$$. The model takes the form:
+
 $$
   y = \beta_0 + \beta_1 x_1 + \cdots + \beta_p x_p +\epsilon
 $$
-where $\epsilon$ is normally distributed. This book presents three
-extensions to this framework. The first generalizes the $y$ part;
-the second, the $\epsilon$ part; and the third, the $x$ part of the linear
+
+where $$\epsilon$$ is normally distributed. This book presents three
+extensions to this framework. The first generalizes the *y* part;
+the second, the $$\epsilon$$ part; and the third, the *x* part of the linear
 model.
 
 **Generalized Linear Models (GLMs):** The standard linear model cannot
-handle nonnormal  responses, $y$, such as counts or proportions. This
+handle nonnormal  responses, *y*, such as counts or proportions. This
 motivates the development of generalized linear models that can
 represent categorical, binary and other response types.
 
 **Mixed Effect Models:** Some data has a grouped, nested or
 hierarchical structure. Repeated measures, longitudinal and multilevel
 data consist of several observations taken on the same individual or
-group. This induces a correlation structure in the error, $\epsilon$. Mixed
+group. This induces a correlation structure in the error, $$\epsilon$$. Mixed
 effect models allow the modeling of such data.
 
 **Nonparametric Regression Models:** In the linear model, the
-predictors, $x$, are combined in a linear way to model the effect on the
+predictors, *x*, are combined in a linear way to model the effect on the
 response. Sometimes this linearity is insufficient to capture the
 structure of the data and more flexibility is required. Methods such
 as additive models, trees and neural networks allow a more flexible
@@ -99,7 +101,7 @@ now available. I have revised or added several topics:
   response models.
 - New sections on sandwich and robust estimation for GLMs have been added. Tweedie GLMs are now covered.
 - The chapters on random effects and repeated measures have been substantially
-  revised to reflect changes in the `lme4` package that removed many $p$-values
+  revised to reflect changes in the `lme4` package that removed many *p*-values
   from the output. We show how to do hypothesis testing for these models using other methods.
 - I have added a chapter concerning the Bayesian analysis of mixed effect models. There
   are sufficient drawbacks to the analysis in the existing two chapters that

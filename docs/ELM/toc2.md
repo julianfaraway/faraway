@@ -102,7 +102,7 @@
     - Discussion of Methods
     - Multivariate Predictors
 
-Additive Models
+- Additive Models
     - Modeling Ozone Concentration
     - Additive Models Using mgcv
     - Generalized Additive Models
@@ -111,14 +111,14 @@ Additive Models
     - Generalized Additive Mixed Models
     - Multivariate Adaptive Regression Splines
 
-Trees
+- Trees
     - Regression Trees
     - Tree Pruning
     - Random Forests
     - Classification Trees
     - Classification Using Forests
 
-Neural Networks
+- Neural Networks
     - Statistical Models as NNs
     - Feed-Forward Neural Network with One Hidden Layer
     - NN Application
