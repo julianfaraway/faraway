@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>Errata for Linear Models in R</title>
+</head>
+
+<body>
+<h1>Errata for Linear Models in R</h1>
+
+<h2>First Printing</h2>
+
+<ul>
+  <li> p9. Dataset <a href="../data/divusa.dat" ><tt>divusa</tt></a> was omitted from the original version of the package. Please download
+  the latest version from CRAN.
+  Here is
+  the <a href="divusa.Rd" >R help file.</a></li> 
+  <li> p12. Displayed Equation 2 should read x<sub>i1</sub>, x<sub>i2</sub> and x<sub>i3</sub> in lieu of x<sub>1i</sub>, x<sub>2i</sub>and x<sub>3i</sub>.</li>
+  <li> p23. Dataset <a href="../data/uswages.dat" ><b>uswages</b></a> was omitted from the original version of the package. Please download
+  the latest version from CRAN. Here is
+  the <a href="uswages.Rd" >R help file.</a></li>
+  <li> p23, Question 4, variable is <del><tt>lpbh</tt></del> <tt>lbph</tt> not <tt>lpph</tt></li>
+  <li> p35, line 3 - should be beta<sub>ddpi</sub>.</li>
+  <li> p35, line 6 - zero is <b>not</b> in the interval.</li>
+  <li> p45, line 2 - should read
+<pre>
+F-statistic: 5.76 on 4 and 45 DF,  p-value: 0.00079 
+</pre>
+  </li>
+  <li> p59, long-tailed is leptokurtic, short-tailed is platykurtic.</li>
+  <li> p87, Q3 dataset is <tt>divusa</tt> not <tt>divorce</tt></li>
+  <li> p90, last displayed equation, printing error overplots rho and epsilon.</li>
+  <li> p101, <tt>library(lqs)</tt> is now included in <tt>MASS</tt>(R Version 2.0.0+) </li>
+  <li> p107, Q2 dataset is <tt>divusa</tt> not <tt>divorce</tt></li>
+  <li> p113, Fig 7.3 is missing the broken stick fitted lines - it should
+  appear as<br>
+<img src="fig73.png" >
+  <br>
+  </li>
+  <li> p136, <tt>library(mva)</tt> is unnecessary since functions in this
+  package are now loaded by default. (R Version 2.0.0)</li>
+ <li> p184 - (2nd para from the bottom) Should read "means for B and C are 66 and 68"</li>
+  <li> p189-193, over printing errors -  overplots of alpha and beta.</li>
+</ul>
+
+<h2>Second Printing</h2>
+
+<ul>
+<li> Preface, x, I have moved - the new book web site is at <tt>http://www.maths.bath.ac.uk/~jjf23/LMR</tt></li>
+  <li> p12 and elsewhere, "fi" has been printed as &#163 i.e de&#163nition should
+  read as definition.</li>
+  <li> p16 2/3 way down: "..errors are uncorrelated and have <i>equal</i> variance"</li>
+  <li> p32, replace 30! with n!</li>
+  <li> p51, question 4(b), test the hypothesis that beta_takers=0</li>
+  <li> p78, Figure 5.1, line should be labeled as y=beta_0+beta_1x</li>
+  <li> p136, midpage, should read "The eigenvectors can be found in the object..."</li>
+  <li> p136, second para from bottom, is better worded as "These vectors are used for the
+  linear combinations..."</li>
+  <li> p137, just before second R command: "..plot it in the right of Figure 9.3"</li>
+  <li> p139, package <tt>pls.pcr</tt> has been replaced with package <tt>pls</tt> in
+  more recent versions of R. Last paragraph is now:
+	The <tt>pls</tt> package can compute this CV. By default, the data is divided
+	into ten parts for the CV:
+<pre>
+> pcrmod <- pcr(fat ~ ., data=meatspec[1:172,], validation="CV",ncomp=50)
+> validationplot(pcrmod)
+</pre>
+<li> p140, <tt>validationplot()</tt> above produces a slightly different plot for the right
+panel of Figure 9.5.</li>
+<li> p141, The <tt>plsr()</tt> function now centers the predictors internally. So first
+	sentence can now read "We now compute the PLS on all models up to size 50". The
+	next chunk of R code becomes:
+<pre>
+> plsg <- plsr(fat ~ ., data=meatspec[1:172,], ncomp=50, validation="CV")
+> coefplot(plsg,ncomp=4,xlab="Frequency")
+> validationplot(plsg)
+</pre>
+The centering described in the last two sentences of p141 is now redundant.
+Last chunk of R code becomes:
+<pre>
+> ypred <- predict(plsg,ncomp=14)
+> rmse(ypred,meatspec$fat[1:172])
+</pre>
+</li>
+<li> p142, chunk of R code becomes:
+<pre>
+> ytpred <- predict(plsg,meatspec[173:215,],ncomp=14)
+> rmse(ytpred,meatspec$fat[173:215])
+</pre>
+Note also that Figure 9.7 is somewhat changed by using the plotting functions from the <tt>pls</tt> package.
+  </li>
+  <li> p146, question 4. Data is <tt>fat</tt> not <tt>bodyfat</tt></li>
+  <li> p174, The groups in the fruitfly data are wrongly attributed - replace
+  the offending sentence with "The five groups are labeled isolated, low, high, one and many respectively". Furthermore, the levels of activity have
+  also been incorrectly labeled in the data. The following transpositions
+  should be made: low<->many, many<->isolated, isolated<->one and one<->low.
+  Fortunately, high activity is correct and this is the only level that
+  differs much from the rest. Also, the dataset as presented here
+  is missing one observation  from that presented in the original article.
+  </li>
+  <li> p189-193, over printing errors -  overplots of phi, alpha and beta.</li>
+<li> p193, the numbers for Ntape and Nlaser are explained on the help page for <tt>composite</tt></li>
+  <li> p217, package <tt>pls.pcr</tt> has been replaced by <tt>pls</tt>.
+	Also, I have moved - the new book web site is at
+<tt>http://www.maths.bath.ac.uk/~jjf23/LMR</tt>
+</li>
+ </ul>
+
+<h2>Third Printing</h2>
+
+<ul>
+  <li> p23, Question 4, variable is <tt>lbph</tt> not <tt>lpbh</tt></li>
+  <li> p66, Last two equations have a double closing parenthesis where
+  they should be only one.
+  <li> p136, Should read "We can examine the square roots of the
+  eigenvalues of cov(X)". cov(X) = X<sup>T</sup>X/(n-1) where the
+  columns of X have been mean-centered.
+  <li> p141 The centering described in the last two sentences is not relevant. (It refers to an earlier version of the software).
+  <li> p144, changes to the earlier printing removed the definitions of the centered training and test sets. These
+  now need to be computed here before fitting the ridge regression model as
+  <pre>
+> trainx <- as.matrix(sweep(meatspec[1:172,-101],2,mm))
+> testx <-  as.matrix(sweep(meatspec[173:215,-101],2,mm))
+</pre>
+  <li> p146, Question 4. To be more explicit, use <tt>siri</tt> as the measure of body fat. Do not use <tt>brozek</tt> or <tt>density</tt> as predictors.
+<li> p208, there is an error in the computation of the relative efficiency which should read:
+<pre>
+> summary(g)$sig
+[1] 36.564
+> (47.047/36.564)^2
+[1] 1.6556
+  </pre>
+Thus the CRD would require only 66% more observations not 93%.
+</ul>
+
+<hr>
+</body> </html>

@@ -24,9 +24,7 @@ First Edition
 
 <img src="lmr.gif" alt="Picture of LMR 1stEd book" width="250"/>
 
-[Published by CRC Press](http://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=C4258&parent_id=&pc=).
-
 -   [Preface](preface.md)
 -   [Zip file of R commands](RscriptsEd1.zip) used in text.
--   [Errata](errata.md)
+-   [Errata](errata.html)
 
