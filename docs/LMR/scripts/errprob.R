@@ -1,0 +1,91 @@
+library(faraway)
+data(longley)
+g <- lm(Employed ~ GNP + Population, longley)
+summary(g,cor=T)
+cor(longley$GNP,longley$Pop)
+cor(residuals(g)[-1],residuals(g)[-16])
+x <- model.matrix(g)
+Sigma <- diag(16)
+Sigma <- 0.31041^abs(row(Sigma)-col(Sigma))
+Sigi <- solve(Sigma)
+xtxi <- solve(t(x) %*% Sigi %*% x)
+(beta <- solve(t(x) %*% Sigi %*% x,t(x) %*% Sigi %*% longley$Empl))
+res <- longley$Empl - x %*% beta
+(sig <- sqrt((t(res) %*% Sigi %*% res)/g$df))
+sqrt(diag(xtxi))*sig
+sm <- chol(Sigma)
+smi <- solve(t(sm))
+sx <- smi %*% x
+sy <- smi %*% longley$Empl
+summary(lm(sy ~ sx-1))
+cor(res[-1],res[-16])
+library(nlme)
+g <- gls(Employed ~ GNP + Population,correlation=corAR1(form= ~Year), data=longley)
+summary(g)
+intervals(g)
+data(fpe)
+fpe
+g <- lm(A2 ~ A+B+C+D+E+F+G+H+J+K+N-1, fpe, weights=1/EI)
+coef(g)
+lm(A2 ~ A+B+C+D+E+F+G+H+J+K+N-1, fpe)$coef
+lm(A2 ~ A+B+C+D+E+F+G+H+J+K+N-1, fpe, weights=53/EI)$coef
+lm(A2 ~ offset(A+G+K)+C+D+E+F+N-1, fpe, weights=1/EI)$coef
+data(corrosion)
+plot(loss ~ Fe, corrosion,xlab="Iron content",ylab="Weight loss")
+g <- lm(loss ~ Fe, corrosion)
+summary(g)
+abline(coef(g))
+ga <- lm(loss ~ factor(Fe), corrosion)
+points(corrosion$Fe,fitted(ga),pch=18)
+anova(g,ga)
+gp <- lm(loss ~ Fe+I(Fe^2)+I(Fe^3)+I(Fe^4)+I(Fe^5)+I(Fe^6),corrosion)
+plot(loss ~ Fe, data=corrosion,ylim=c(60,130))
+points(corrosion$Fe,fitted(ga),pch=18)
+grid <- seq(0,2,len=50)
+lines(grid,predict(gp,data.frame(Fe=grid)))
+summary(gp)$r.squared
+data(gala)
+gl <- lm(Species ~ Area + Elevation + Nearest + Scruz + Adjacent,gala)
+summary(gl)
+library(MASS)
+gr <- rlm(Species ~ Area + Elevation + Nearest + Scruz + Adjacent,gala)
+summary(gr)
+library(quantreg)
+attach(gala)
+gq <- rq(Species ~Area+Elevation+Nearest+Scruz+Adjacent)
+summary(gq)
+detach(gala)
+library(lqs)
+g <- ltsreg(Species ~ Area + Elevation + Nearest + Scruz + Adjacent,gala)
+coef(g)
+g <- ltsreg(Species ~ Area + Elevation + Nearest + Scruz + Adjacent,gala)
+coef(g)
+g <- ltsreg(Species ~ Area + Elevation + Nearest + Scruz + Adjacent, gala,nsamp="exact")
+coef(g)
+sample(10,rep=T)
+residuals(g)[sample(30,rep=TRUE)]
+x <- model.matrix( ~ Area+Elevation+Nearest+Scruz+Adjacent,gala)[,-1]
+bcoef <- matrix(0,1000,6)
+for(i in 1:1000){
+newy <- predict(g) + residuals(g)[sample(30,rep=T)]
+brg <- ltsreg(x,newy,nsamp="best")
+bcoef[i,] <- brg$coef
+}
+quantile(bcoef[,2],c(0.025,0.975))
+plot(density(bcoef[,2]),xlab="Coefficient of Area",main="")
+abline(v=quantile(bcoef[,2],c(0.025,0.975)))
+gli <- lm(Species ~ Area + Elevation + Nearest + Scruz + Adjacent,  gala,subset=(row.names(gala) != "Isabela"))
+summary(gli)
+data(star)
+plot(light ~ temp, star)
+gs1 <- lm(light ~ temp, star)
+abline(coef(gs1))
+gs2 <- rlm(light ~ temp, star)
+abline(coef(gs2), lty=2)
+gs3 <- ltsreg(light ~ temp, star, nsamp="exact")
+abline(coef(gs3), lty=5)
+i <- order(pipeline$Field)
+npipe <- pipeline[i,]
+ff <- gl(12,9)[-108]
+meanfield <- unlist(lapply(split(npipe$Field,ff),mean))
+varlab <- unlist(lapply(split(npipe$Lab,ff),var))

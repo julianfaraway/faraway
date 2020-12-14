@@ -1,0 +1,27 @@
+library(faraway)
+loglik <- function(p,y,n) lchoose(n,y) + y*log(p) + (n-y)*log(1-p)
+nloglik <- function(p,y,n) loglik(p,y,n) - loglik(y/n,y,n)
+pr <- seq(0.05,0.95,by=0.01)
+matplot(pr,cbind(nloglik(pr,10,25),nloglik(pr,20,50)),type="l",xlab="p",ylab="log-likelihood")
+f <- function(x) -loglik(x,10,25)
+mm <- nlm(f,0.5,hessian=T)
+mm$estimate
+c(1/mm$hessian,0.4*(1-0.4)/25)
+pr <- seq(0.25,0.55,by=0.01)
+plot(pr,nloglik(pr,40,100),type="l",xlab="p",ylab="log-likelihood")
+abline(h=-qchisq(0.95,1)/2)
+g <- function(x) nloglik(x,40,100)+qchisq(0.95,1)/2
+uniroot(g,c(0.45,0.55))$root
+uniroot(g,c(0.25,0.35))$root
+abline(v=c(0.49765,0.30743))
+se <- sqrt(0.4*(1-0.4)/100)
+cv <- qnorm(0.975)
+c(0.4-cv*se,0.4+cv*se)
+(lrstat <- 2*(loglik(0.4,40,100)-loglik(0.5,40,100)))
+pchisq(lrstat,1,lower=F)
+(z <- (0.5-0.4)/se)
+2*pnorm(z,lower=F)
+(sc <- 40/0.5-(100-40)/(1-0.5))
+(obsinf <- 40/0.5^2+(100-40)/(1-0.5)^2)
+(score.test <- 40*40/400)
+pchisq(4,1,lower=F)

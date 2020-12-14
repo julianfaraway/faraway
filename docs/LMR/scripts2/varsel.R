@@ -1,0 +1,36 @@
+library(faraway)
+data(state)
+statedata <- data.frame(state.x77,row.names=state.abb)
+lmod <- lm(Life.Exp ~ ., statedata)
+sumary(lmod)
+lmod <- update(lmod, . ~ . - Area)
+sumary(lmod)
+lmod <- update(lmod, . ~ . - Illiteracy)
+sumary(lmod)
+lmod <- update(lmod, . ~ . - Income)
+sumary(lmod)
+lmod <- update(lmod, . ~ . - Population)
+sumary(lmod)
+sumary(lm(Life.Exp ~ Illiteracy+Murder+Frost, statedata))
+require(leaps)
+b <- regsubsets(Life.Exp~.,data=statedata)
+rs <- summary(b)
+rs$which
+AIC <- 50*log(rs$rss/50) + (2:8)*2
+plot(AIC ~ I(1:7), ylab="AIC", xlab="Number of Predictors")
+plot(2:8,rs$adjr2,xlab="No. of Parameters",ylab="Adjusted R-square")
+which.max(rs$adjr2)
+plot(2:8,rs$cp,xlab="No. of Parameters",ylab="Cp Statistic")
+abline(0,1)
+lmod <- lm(Life.Exp ~ ., data=statedata)
+step(lmod)
+h <- lm.influence(lmod)$hat
+names(h) <- state.abb
+rev(sort(h))
+b<-regsubsets(Life.Exp~.,data=statedata,  subset=(state.abb!="AK"))
+rs <- summary(b)
+rs$which[which.max(rs$adjr),]
+stripchart(data.frame(scale(statedata)), method ="jitter", las=2,  vertical=TRUE)
+b<-regsubsets(Life.Exp ~ log(Population)+Income+Illiteracy+ Murder+HS.Grad+Frost+log(Area),statedata)
+rs <- summary(b)
+rs$which[which.max(rs$adjr),]
