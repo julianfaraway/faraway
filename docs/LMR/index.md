@@ -5,7 +5,7 @@
 Second Edition
 --------------
 
-![Picture of LMR 2ndEd book](lmr2.png | width=100)
+<img src="lmr2.png" alt="Picture of LMR 2Ed book" width="250"/>
 
 Published 1st July 2014 and available from [CRC Press](http://www.crcpress.com/product/isbn/9781439887332).
 
@@ -18,7 +18,7 @@ Published 1st July 2014 and available from [CRC Press](http://www.crcpress.com/p
 First Edition
 -------------
 
-![Picture of LMR 1stEd book](lmr.gif | width=100)
+<img src="lmr.gif" alt="Picture of LMR 1stEd book" width="250"/>
 
 [Published by CRC Press](http://www.crcpress.com/shopping_cart/products/product_detail.asp?sku=C4258&parent_id=&pc=).
 
