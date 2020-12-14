@@ -1,10 +1,4 @@
----
-title: Errata for Extending the Linear Model with R, 2nd Edition
-author: Julian Faraway
-output:
- html_document:
-  theme: cosmo
----
+# Errata for Extending the Linear Model with R, 2nd Edition
 
 Errata are corrected as found and incorporated into newly printed copies of the book. This
 means that not all the errata listed below exist in your copy of the book. If you see any
@@ -45,10 +39,10 @@ gdf <- group_by(wcgsm, ntile(linpred,100))
 - p55. The R code to compute the Pearson chi-squared statistic is missing. It is `sum(residuals(lmod,type="pearson")^2)`
 - p64. There is a single zero response value in beta regression model in this example. As explained in the help page for betar() this causes some difficulties. If this point is excluded, then the fit becomes similar to the quasibinomial as claimed in the text.
 - p170. The `robust` package has been superceded by the `robustbase` package.
-- p188. The scale of the Gamma in the compound Poisson-Gamma distribution is $$\lambda^{-1}=\phi(p-1)\mu^{p-1}$$
+- p188. The scale of the Gamma in the compound Poisson-Gamma distribution is $\lambda^{-1}=\phi(p-1)\mu^{p-1}$
 if defined in the same sense as on p175.
-- p198. In the first equation needs some added parentheses in the denominator as in: $$(2\pi)^{n/2}$$.
-- p198. The last equation should read $$K^Ty \sim N(0,\sigma^2 K^T V K)$$
+- p198. In the first equation needs some added parentheses in the denominator as in: $(2\pi)^{n/2}$.
+- p198. The last equation should read $K^Ty \sim N(0,\sigma^2 K^T V K)$
 - p204. The behavior of `lme4` has changed since publication. Now when the MLE of a variance component approaches the boundary of the parameter space (usually zero), it prints a warning message. Since this occurs frequently in the boostrap sampling, many warning messages are produced. But these are warnings and not an errors - the results are OK.
 - p215. The `refit()` function in the current (April 2016) `lme4` no longer works as expected. Replace:
 ```
