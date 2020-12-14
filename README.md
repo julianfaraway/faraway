@@ -1,3 +1,5 @@
+# Books using R by Julian Faraway
+
 This R package contains data and functions from [three books](https://julianfaraway.github.io/faraway/):
 
 1. [Linear Models with R](https://julianfaraway.github.io/faraway/LMR/)  
