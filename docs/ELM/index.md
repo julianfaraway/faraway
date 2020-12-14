@@ -4,7 +4,7 @@
 
 ### Second Edition
 
-![Picture of ELM2 book](elm2.jpg | width=100)
+<img src="elm2.jpg" alt="ELM 2Ed book" width="250"/>
 
 - The book is published by [CRC press](https://www.crcpress.com/Extending-the-Linear-Model-with-R-Generalized-Linear-Mixed-Effects-and/Faraway/9781498720960)
 - Install the [faraway](https://cloud.r-project.org/web/packages/faraway/index.html) package in R to access the datasets
@@ -15,7 +15,8 @@
 
 ### First Edition
 
-![Picture of ELM book](elm.jpg | width=100)
+<img src="elm.jpg" alt="ELM 1Ed book" width="250"/>
+
 
 - The book is published by [CRC press](http://www.crcpress.com/product/isbn/9781584884248).
 - [Preface and Table of Contents](prefelm.pdf)
