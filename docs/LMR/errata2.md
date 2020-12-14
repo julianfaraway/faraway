@@ -1,10 +1,4 @@
----
-title: Errata for Linear Models with R, 2nd Edition
-author: Julian Faraway
-output:
- html_document:
-  theme: cosmo
----
+# Errata for Linear Models with R, 2nd Edition
 
 Errata are corrected as found and incorporated into newly printed copies of the book. This
 means that not all the errata listed below exist in your copy of the book. If you see any
