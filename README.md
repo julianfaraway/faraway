@@ -1,4 +1,4 @@
-This R package contains data and functions from three books:
+This R package contains data and functions from [three books](http://julianfaraway.github.io/faraway/):
 
 1. [Linear Models with R](http://julianfaraway.github.io/faraway/LMR/)  
 
