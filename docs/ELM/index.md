@@ -12,8 +12,9 @@ can install the [development version](https://github.com/julianfaraway/faraway)
 <img src="elm2.jpg" alt="ELM 2Ed book" width="250"/>
 
 - The book is published by [CRC press](https://www.crcpress.com/Extending-the-Linear-Model-with-R-Generalized-Linear-Mixed-Effects-and/Faraway/9781498720960)
+- [Preface](preface2.md)
+- [Table of contents and R scripts](toc2.md)
 - The [Errata](errata2.md).
-- The [R commands](scripts2/index.md)  used in text.
 - [STAN implementations](../stan/index.html) of the linear mixed models in the book are also available.
 - [INLA implementations](http://julianfaraway.github.io/brinla/examples/) of the linear mixed models in the book are also available.
 
@@ -22,12 +23,7 @@ can install the [development version](https://github.com/julianfaraway/faraway)
 <img src="elm.jpg" alt="ELM 1Ed book" width="250"/>
 
 
-- The book is published by [CRC press](http://www.crcpress.com/product/isbn/9781584884248).
 - [Preface and Table of Contents](prefelm.pdf)
-- The [data](../book/jfdata.zip) from the *faraway* package
-  in  ASCII format. These are provided for the convenience of users
-  of statistical software other than R. Users of R should install
-  the *faraway* package.
 - The [R commands](scripts/index.md)  used in text.
 - The [Errata](errata.md).
 - The `lme4` package, used to  fit models with random effects and used extensively in Chapters 8 and 9, has

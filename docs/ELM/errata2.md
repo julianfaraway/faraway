@@ -1,5 +1,8 @@
 # Errata for Extending the Linear Model with R, 2nd Edition
 
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+
 Errata are corrected as found and incorporated into newly printed copies of the book. This
 means that not all the errata listed below exist in your copy of the book. If you see any
 errors not listed below, please let me know.
