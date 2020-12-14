@@ -1,8 +1,8 @@
-This R package contains data and functions from [three books](http://julianfaraway.github.io/faraway/):
+This R package contains data and functions from [three books](https://julianfaraway.github.io/faraway/):
 
-1. [Linear Models with R](http://julianfaraway.github.io/faraway/LMR/)  
+1. [Linear Models with R](https://julianfaraway.github.io/faraway/LMR/)  
 
-2. [Extending the Linear Model with R](http://julianfaraway.github.io/faraway/ELM/)
+2. [Extending the Linear Model with R](https://julianfaraway.github.io/faraway/ELM/)
 
 3. [Practical Regression and ANOVA with R](https://cran.r-project.org/doc/contrib/Faraway-PRA.pdf)
 
