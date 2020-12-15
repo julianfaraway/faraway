@@ -17,7 +17,7 @@ Here is a list of errors in the July 2002 edition of the text.
 ## Chapter 2
 
 1.  p18. should read \"shown in Figure 2.1\"
-2.  Equation should be $$y^T y - 2 'beta^T X^T y + beta^T X^T X \beta$$
+2.  Equation should be $$y^T y - 2 \beta^T X^T y + \beta^T X^T X \beta$$
 
 ## Chapter 13
 

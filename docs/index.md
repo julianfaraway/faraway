@@ -1,4 +1,4 @@
-# Books that use R by Julian Faraway
+# Books that use R by [Julian Faraway]((https://julianfaraway.github.io/)
 
 1. [Linear Models with R](LMR/)  
 
