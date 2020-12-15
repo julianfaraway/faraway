@@ -101,7 +101,7 @@ If you find any errors not reported below, please let me know.
     differences may be observed between the current version and that
     used in the book. In particular, recent versions of `summary()` and
     `anova()` of `lmer()`-produced models now do not contain p-values.
-    Please [read about changes](mixchange.pdf) to these two chapters to
+    Please [read about changes](mixchange.md) to these two chapters to
     address this as well as some discussion of other inferential methods
     that could be used.
 

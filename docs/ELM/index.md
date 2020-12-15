@@ -25,6 +25,6 @@ can install the [development version](https://github.com/julianfaraway/faraway)
 - The [R commands](scripts/index.md)  used in text.
 - The [Errata](errata.md).
 - The `lme4` package, used to  fit models with random effects and used extensively in Chapters 8 and 9, has
-  undergone substantial changes since the publication of the book. Please read about these [changes](../mixchange/index.html)
+  undergone substantial changes since the publication of the book. Please read about these [changes](mixchange.md)
   along with some suggested solutions. (last updated April 2015).
 
