@@ -1,4 +1,4 @@
-# Books that use R by Julian Faraway
+# Books that use R by [Julian Faraway](https://julianfaraway.github.io/)
 
 1. [Linear Models with R](LMR/)  
 
@@ -9,4 +9,3 @@
 [Bayesian Regression with INLA](https://github.com/julianfaraway/brinla) also uses
 R but functions and data from that book are available in a separate package.
 
-[Julian Faraway]((https://julianfaraway.github.io/)
