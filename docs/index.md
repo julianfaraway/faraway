@@ -4,5 +4,8 @@
 
 2. [Extending the Linear Model with R](ELM/)
 
-3. [Practical Regression and ANOVA with R](https://cran.r-project.org/doc/contrib/Faraway-PRA.pdf)
+3. [Practical Regression and ANOVA with R](PRA/)
+
+[Bayesian Regression with INLA](https://github.com/julianfaraway/brinla) also uses
+R but functions and data from that book are available in a separate package.
 
