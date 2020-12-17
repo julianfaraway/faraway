@@ -2,6 +2,8 @@
 
 ## Julian Faraway
 
+## R package
+
 The book refers to many datasets that can be found in the *faraway* package that 
 you will need to install in R. You can do this using the "Tools->Install Packages"
 menu in Rstudio or the "Packages and Data" menu in the R GUI. Alternatively, you
