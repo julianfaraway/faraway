@@ -17,7 +17,11 @@ Gleason score } \item{pgg45}{ percentage Gleason scores 4 or 5 }
 \item{lpsa}{ log(prostate specific antigen) } }
 }
 \source{
-Andrews DF and Herzberg AM (1985): Data. New York: Springer-Verlag
+Stamey, T.A., Kabalin, J.N., McNeal, J.E., Johnstone, I.M., Freiha,
+ F., Redwine, E.A. and Yang, N. (1989). Prostate specific antigen in
+ the diagnosis and treatment of adenocarcinoma of the prostate:
+ II. radical prostatectomy treated patients. Journal of Urology
+ 141(5):1076–1083. 
 }
 \description{
 The \code{prostate} data frame has 97 rows and 9 columns. A study on 97 men
