@@ -17,8 +17,8 @@ can install the [development version](https://github.com/julianfaraway/faraway)
 - [Preface](preface2.md)
 - [Table of contents and R scripts](toc2.md)
 - The [Errata](errata2.md).
-- [STAN implementations](https://people.bath.ac.uk/jjf23/stan/index.html) of the linear mixed models in the book are also available.
-- [INLA implementations](http://julianfaraway.github.io/brinla/examples/) of the linear mixed models in the book are also available.
+- [Implementations](http://julianfaraway.github.io/brinla/examples/) of the linear mixed models using
+`lme4, STAN, INLA` and `mgcv`
 
 ### First Edition
 
