@@ -17,7 +17,7 @@ can install the [development version](https://github.com/julianfaraway/faraway)
 - [Preface](preface2.md)
 - [Table of contents and R scripts](toc2.md)
 - The [Errata](errata2.md).
-- [Implementations](http://julianfaraway.github.io/brinla/examples/) of the linear mixed models using
+- [Implementations](http://github.com/julianfaraway/rexamples/) of the linear mixed models using
 `lme4, STAN, INLA` and `mgcv`
 
 ### First Edition
