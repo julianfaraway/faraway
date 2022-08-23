@@ -1,13 +1,13 @@
 Package: faraway
 Version: 1.0.8
-Date: 2020-12-12
+Date: 2022-08-23
 Author: Julian Faraway <jjf23@bath.ac.uk>
 Maintainer: Julian Faraway <jjf23@bath.ac.uk>
 Title: Functions and Datasets for Books by Julian Faraway
-Description: Books are "Practical Regression and ANOVA in R" on CRAN, "Linear Models with R" published 1st Ed. August 2004, 2nd Ed. July 2014 by CRC press, ISBN 9781439887332, and "Extending the Linear Model with R" published by CRC press in 1st Ed. December 2005 and 2nd Ed. March 2016, ISBN 9781584884248.
+Description: Books are "Linear Models with R" published 1st Ed. August 2004, 2nd Ed. July 2014 by CRC press, ISBN 9781439887332, and "Extending the Linear Model with R" published by CRC press in 1st Ed. December 2005 and 2nd Ed. March 2016, ISBN 9781584884248 and "Practical Regression and ANOVA in R" contributed documentation on CRAN (now very dated)
 Depends: R (>= 3.5.0)
 License: GPL
-URL: http://people.bath.ac.uk/jjf23/
+URL: https://github.com/julianfaraway/faraway
 LazyData: yes
 Imports: methods, lme4, nlme
 Suggests: leaps
