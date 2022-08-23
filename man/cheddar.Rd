@@ -12,7 +12,7 @@ A data frame with 30 observations on the following 4 variables.
 \item{Lactic}{concentration of lactic acid} }
 }
 \source{
-David S. Moore and George P. McCabe (1993) Introduction to the Practice of Statistics, 
+David S. Moore and George P. McCabe (1993) Introduction to the Practice of Statistics,
 W. H. Freeman and company, second edition.
 }
 \description{

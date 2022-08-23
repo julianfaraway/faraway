@@ -39,7 +39,7 @@ experimentally assayed, scaled to [0,1]} }
 Jonathan D. Hirst, Ross D. King, Michael J. E. Sternberg (1994)
 Quantitative structure-activity relationships by neural networks and
 inductive logic programming. I. The inhibition of dihydrofolate reductase by
-pyrimidines \url{http://dx.doi.org/10.1007/BF00125375}
+pyrimidines \doi{10.1007/BF00125375}
 }
 \description{
 Structural information on 74 2,4-diamino- 5-(substituted benzyl) pyrimidines

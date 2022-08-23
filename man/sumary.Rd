@@ -6,7 +6,11 @@
 \alias{sumary,lm-method}
 \alias{sumary,glm-method}
 \alias{sumary,merMod-method}
+\alias{sumary,sumary-methods}
 \title{Abbreviated Regression Summary}
+\usage{
+sumary(object, ...)
+}
 \arguments{
 \item{object}{An lm, glm or mer object returned from lm(), glm() or lmer()
 respectively}

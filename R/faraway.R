@@ -3,21 +3,21 @@
 NULL
 #' @importFrom lme4 getME isREML refitML VarCorr
 NULL
-#' 
+#'
 #' @importFrom nlme fixef ranef
 NULL
-#' 
+#'
 #' @importFrom graphics abline points text
 NULL
-#' 
+#'
 #' @importFrom stats AIC coef deviance lm logLik model.matrix pnorm printCoefmat qnorm vcov
 NULL
 #' Maximum Adjusted R-squared
-#' 
+#'
 #' Displays the best models from a leaps object
-#' 
+#'
 #' Requires leaps package
-#' 
+#'
 #' @name maxadjr
 #' @param l A leaps object returned from leaps()
 #' @param best An optional argument specify the number of models to be returned
@@ -41,9 +41,9 @@ NULL
   m
 }
 #' Labeled QQ plot
-#' 
+#'
 #' Makes a labeled QQ plot
-#' 
+#'
 #' @name qqnorml
 #' @param y A numeric vector
 #' @param main main label
@@ -54,9 +54,9 @@ NULL
 #' @author Julian Faraway
 #' @seealso qqnorm
 #' @examples
-#' 
+#'
 #' qqnorml(rnorm(16))
-#' 
+#'
 #' @export qqnorml
 "qqnorml" <-
   function(y,main = "Normal Q-Q Plot", xlab = "Theoretical Quantiles",
@@ -70,11 +70,11 @@ NULL
     text(u,y[i],as.character(1:n)[i])
   }
 #' Cp plot
-#' 
+#'
 #' Makes a Cp plot
-#' 
+#'
 #' Requires leaps package
-#' 
+#'
 #' @name Cpplot
 #' @param cp A leaps object returned from leaps()
 #' @return none
@@ -102,9 +102,9 @@ NULL
 
 
 #' vif
-#' 
+#'
 #' Computes the variance inflation factors
-#' 
+#'
 #' @title vif
 #' @aliases vif vif.default vif.lm
 #' @param object a data matrix (design matrix without intercept) or a model
@@ -112,19 +112,19 @@ NULL
 #' @return variance inflation factors
 #' @author Julian Faraway
 #' @examples
-#' 
+#'
 #' data(stackloss)
 #' vif(stackloss[,-4])
-#' #  Air.Flow Water.Temp Acid.Conc. 
-#' #    2.9065     2.5726     1.3336 
-#' 
-#' @export 
+#' #  Air.Flow Water.Temp Acid.Conc.
+#' #    2.9065     2.5726     1.3336
+#'
+#' @export
 vif <- function(object){
   UseMethod("vif")
 }
 #' @rdname vif
 #' @method vif default
-#' @export 
+#' @export
 vif.default <- function(object) {
   if(!is.data.frame(object) & !is.matrix(object)) stop("Not matrix or data frame")
   if(is.data.frame(object)) object <- as.matrix(object)
@@ -136,9 +136,9 @@ vif.default <- function(object) {
 }
 #' @rdname vif
 #' @method vif lm
-#' @export 
+#' @export
 vif.lm <- function(object) {
-  if (any(is.na(coef(object)))) 
+  if (any(is.na(coef(object))))
     stop("Model has non-identifable parameters")
   V <- summary(object)$cov.unscaled
   Vi <- crossprod(model.matrix(object))
@@ -162,9 +162,9 @@ vif.lm <- function(object) {
 
 
 #' Partial Residual Plot
-#' 
+#'
 #' Makes a Partial Residual plot
-#' 
+#'
 #' @name prplot
 #' @param g An object returned from lm()
 #' @param i index of predictor
@@ -172,11 +172,11 @@ vif.lm <- function(object) {
 #' @author Julian Faraway
 #' @keywords regression
 #' @examples
-#' 
+#'
 #' data(stackloss)
 #' g <- lm(stack.loss ~ .,stackloss)
 #' prplot(g,1)
-#' 
+#'
 #' @export prplot
 prplot <- function(g,i)
 {
@@ -197,10 +197,10 @@ prplot <- function(g,i)
 
 
 #' Half Normal Plot
-#' 
+#'
 #' Makes a half-normal plot
-#' 
-#' 
+#'
+#'
 #' @param x a numeric vector
 #' @param nlab number of points to label
 #' @param labs labels for points
@@ -210,9 +210,9 @@ prplot <- function(g,i)
 #' @author Julian Faraway
 #' @seealso qqnorm
 #' @examples
-#' 
+#'
 #' halfnorm(runif(10))
-#' 
+#'
 #' @export halfnorm
 "halfnorm" <-
 function (x, nlab = 2, labs = as.character(1:length(x)), ylab = "Sorted Data",
@@ -241,11 +241,11 @@ function (x, nlab = 2, labs = as.character(1:length(x)), ylab = "Sorted Data",
 
 
 #' Logit transformation
-#' 
+#'
 #' Computes the logit transformation
-#' 
+#'
 #' x <=0 or >=1 will return NA
-#' 
+#'
 #' @param x a numeric vector
 #' @return log(x/(1-x))
 #' @author Julian Faraway
@@ -253,7 +253,7 @@ function (x, nlab = 2, labs = as.character(1:length(x)), ylab = "Sorted Data",
 #' @examples
 #' logit(c(0.1,0.5,1.0,1.1))
 #' #[1] -2.197225  0.000000        NA        NA
-#' 
+#'
 #' @export logit
 logit <- function(x){
   if(any(omit <- (is.na(x) | x <=0 | x >= 1))){
@@ -274,19 +274,19 @@ logit <- function(x){
 
 
 #' Inverse Logit Transformation
-#' 
+#'
 #' Computes the inverse logit transformation
-#' 
-#' 
+#'
+#'
 #' @param x a numeric vector
 #' @return exp(x)/(1+exp(x))
 #' @author Julian Faraway
 #' @seealso logit
 #' @examples
-#' 
+#'
 #' ilogit(1:3)
 #' #[1] 0.7310586 0.8807971 0.9525741
-#' 
+#'
 #' @export ilogit
 ilogit <- function(x){
   if(any(omit <- is.na(x))){
@@ -302,16 +302,16 @@ ilogit <- function(x){
 
 
 #' Abbreviated Regression Summary
-#' 
+#'
 #' Generic summaries for lm, glm and mer objects
-#' 
+#'
 #' This generic function provides an abbreviated regression output containing
 #' the more useful information. Users wanting to see more are advised to use
 #' \code{summary()}
-#' 
+#'
 #' @name sumary
 #' @docType methods
-#' @aliases sumary sumary,lm-method sumary,glm-method sumary,merMod-method
+#' @aliases sumary sumary,lm-method sumary,glm-method sumary,merMod-method sumary,sumary-methods sumary
 #' @param object An lm, glm or mer object returned from lm(), glm() or lmer()
 #' respectively
 #' @param ... further arguments passed to or from other methods.
@@ -323,17 +323,16 @@ ilogit <- function(x){
 #' the \code{arm} package
 #' @keywords regression
 #' @examples
-#' 
+#'
 #' data(stackloss)
 #' object <- lm(stack.loss ~ .,stackloss)
 #' sumary(object)
-#' 
+#'
 #' @exportMethod  sumary
-if (!isGeneric("sumary")) {
-    setGeneric("sumary",
+setGeneric("sumary",
                function(object, ...)
                standardGeneric("sumary"))
-}
+
 
 #'
 #' @docType methods
@@ -453,14 +452,14 @@ setMethod("sumary", signature(object = "merMod"),
 
 
 #' Formating the Rounding of Numbers
-#' 
+#'
 #' \code{fround} rounds the values in its first argument to the specified
 #' number of decimal places with surrounding quotes.
-#' 
+#'
 #' \code{pfround} rounds the values in its first argument to the specified
 #' number of decimal places without surrounding quotes.
-#' 
-#' 
+#'
+#'
 #' @aliases fround pfround
 #' @param x a numeric vector.
 #' @param digits integer indicating the precision to be used.
@@ -469,11 +468,11 @@ setMethod("sumary", signature(object = "merMod"),
 #' @references Copied from the \code{arm} package
 #' @keywords manip print
 #' @examples
-#' 
+#'
 #'     x <- 3.1415926
 #'     fround(x, digits=2)
 #'     pfround(x, digits=2)
-#' 
+#'
 #' @export fround
 fround <- function (x, digits) {
     format (round (x, digits), nsmall=digits)

@@ -1,17 +1,17 @@
 
 
 #' Annual mean temperatures in Ann Arbor, Michigan
-#' 
+#'
 #' The data comes from the U.S. Historical Climatology Network.
-#' 
-#' 
+#'
+#'
 #' @name aatemp
 #' @docType data
 #' @format A data frame with 115 observations on the following 2 variables.
 #' \describe{ \item{year}{year from 1854 to 2000} \item{temp}{annual mean
 #' temperatures in degrees F in Ann Arbor} }
 #' @source United States Historical Climatology Network:
-#' \url{http://www.ncdc.noaa.gov/oa/climate/research/ushcn/ushcn.html}
+#' \url{https://www.ncei.noaa.gov/products/land-based-station/us-historical-climatology-network}
 #' @keywords datasets
 NULL
 
@@ -20,23 +20,23 @@ NULL
 
 
 #' Wear on materials according to type, run and position
-#' 
+#'
 #' The \code{abrasion} data frame has 16 rows and 4 columns.  Four materials
 #' were fed into a wear testing machine and the amount of wear recorded. Four
 #' samples could be processed at the same time and the position of these
 #' samples may be important.  A Latin square design was used.
-#' 
-#' 
+#'
+#'
 #' @name abrasion
 #' @docType data
 #' @format This data frame contains the following columns: \describe{
-#' 
+#'
 #' \item{run}{ The run number 1-4 }
-#' 
+#'
 #' \item{position}{ The position number 1-4 }
-#' 
+#'
 #' \item{material}{ The material A-D }
-#' 
+#'
 #' \item{wear}{ The wear measured loss of weight in 0.1mm over testing
 #' period }}
 #' @source The Design and Analysis of Industrial Experiments by O. Davies,
@@ -49,11 +49,11 @@ NULL
 
 
 #' aflatoxin dosage and liver cancer in lab animals
-#' 
+#'
 #' Aflatoxin B1 was fed to lab animals at vary doses and the number responding
 #' with liver cancer recorded.
-#' 
-#' 
+#'
+#'
 #' @name aflatoxin
 #' @docType data
 #' @format A data frame with 6 observations on the following 3 variables.
@@ -63,9 +63,9 @@ NULL
 #' extrapolation" ASA Proceedings of the Biopharmaceutical Section.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(aflatoxin)
-#' 
+#'
 NULL
 
 
@@ -73,11 +73,11 @@ NULL
 
 
 #' miltary coups and politics in sub-Saharan Africa
-#' 
+#'
 #' Data is a subset of a larger study on factors affecting regime stability in
 #' Sub-Saharan Africa
-#' 
-#' 
+#'
+#'
 #' @name africa
 #' @docType data
 #' @format A data frame with 47 observations on the following 9 variables.
@@ -105,11 +105,11 @@ NULL
 
 
 #' Airline passengers
-#' 
+#'
 #' Monthly totals of airline passengers from 1949 to 1951
-#' 
+#'
 #' Well known time series example dataset
-#' 
+#'
 #' @name airpass
 #' @docType data
 #' @format A data frame with 144 observations on the following 2 variables.
@@ -122,10 +122,10 @@ NULL
 #' Time Series.  Englewood Cliffs, N.J.: Prentice-Hall.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(airpass)
 #' ## maybe str(airpass) ; plot(airpass) ...
-#' 
+#'
 NULL
 
 
@@ -133,12 +133,12 @@ NULL
 
 
 #' Effects of seed inoculum, irrigation and shade on alfalfa yield
-#' 
+#'
 #' The \code{alfalfa} data frame has 25 rows and 4 columns. Data comes from an
 #' experiment to test the effects of seed inoculum, irrigation and shade on
 #' alfalfa yield. A latin square design has been used.
-#' 
-#' 
+#'
+#'
 #' @name alfalfa
 #' @docType data
 #' @format This data frame contains the following columns: \describe{
@@ -156,12 +156,12 @@ NULL
 
 
 #' Match pair study for AML and Xray link
-#' 
+#'
 #' A matched case control study carried out to investigate the connection
 #' between X-ray usage and acute myeloid leukemia in childhood. The pairs are
 #' matched by age, race and county of residence.
-#' 
-#' 
+#'
+#'
 #' @name amlxray
 #' @docType data
 #' @format A data frame with 238 observations on the following 11 variables.
@@ -186,11 +186,11 @@ NULL
 
 
 #' Time in minutes to eye opening after reversal of anaesthetic.
-#' 
+#'
 #' A doctor at major London hospital compared the effects of 4 anaesthetics
 #' used in major operations. 80 patients were divided into groups of 20.
-#' 
-#' 
+#'
+#'
 #' @name anaesthetic
 #' @docType data
 #' @format A data frame with 80 observations on the following 2 variables.
@@ -201,10 +201,10 @@ NULL
 #' Chapman Hall.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(anaesthetic)
 #' ## maybe str(anaesthetic) ; plot(anaesthetic) ...
-#' 
+#'
 NULL
 
 
@@ -212,12 +212,12 @@ NULL
 
 
 #' Respiratory disease rates of babies fed in different ways
-#' 
+#'
 #' Study on infant respiratory disease, namely the proportions of children
 #' developing bronchitis or pneumonia in their first year of life by type of
 #' feeding and sex.
-#' 
-#' 
+#'
+#'
 #' @name babyfood
 #' @docType data
 #' @format A data frame with 6 observations on the following 4 variables.
@@ -229,10 +229,10 @@ NULL
 #' Oxford: Nu- merical Algorithms Group.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(babyfood)
 #' ## maybe str(babyfood) ; plot(babyfood) ...
-#' 
+#'
 NULL
 
 
@@ -240,10 +240,10 @@ NULL
 
 
 #' Beetles exposed to fumigant
-#' 
+#'
 #' Grain beetles were exposed to ethylene oxide
-#' 
-#' 
+#'
+#'
 #' @name beetle
 #' @docType data
 #' @format A data frame with 10 observations on the following 3 variables.
@@ -254,10 +254,10 @@ NULL
 #' @source Busvine (1938)
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(beetle)
 #' ## maybe str(beetle) ; plot(beetle) ...
-#' 
+#'
 NULL
 
 
@@ -265,11 +265,11 @@ NULL
 
 
 #' Insect mortality due to insecticide
-#' 
+#'
 #' An experiment measuring death rates for insects, with 30 insects at each of
 #' five treatment levels.
-#' 
-#' 
+#'
+#'
 #' @name bliss
 #' @docType data
 #' @format A data frame with 5 observations on the following 3 variables.
@@ -279,10 +279,10 @@ NULL
 #' of Applied Biology 22, 134-167.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(bliss)
 #' ## maybe str(bliss) ; plot(bliss) ...
-#' 
+#'
 NULL
 
 
@@ -290,13 +290,13 @@ NULL
 
 
 #' Breaking strength of materials
-#' 
+#'
 #' An experiment was conducted to select the supplier of raw materials for
 #' production of a component. The breaking strength of the component was the
 #' objective of interest.  Four suppliers were considered. The four operators
 #' can only produce one component each per day. A Latin square design was used.
-#' 
-#' 
+#'
+#'
 #' @name breaking
 #' @docType data
 #' @format A data frame with 16 observations on the following 4 variables.
@@ -316,7 +316,7 @@ NULL
 
 
 #' Broccoli weight variation
-#' 
+#'
 #' A number of growers supply broccoli to a food processing plant. The plant
 #' instructs the growers to pack the broccoli into standard size boxes. There
 #' should be 18 clusters of broccoli per box and each cluster should weigh
@@ -324,8 +324,8 @@ NULL
 #' methods of cultivation etc, there is some variation in the cluster weights.
 #' The plant manager selected 3 growers at random and then 4 boxes at random
 #' supplied by these growers. 3 clusters were selected from each box.
-#' 
-#' 
+#'
+#'
 #' @name broccoli
 #' @docType data
 #' @format A data frame with 36 observations on the following 4 variables.
@@ -344,13 +344,13 @@ NULL
 
 
 #' Butterfat content of milk by breed
-#' 
+#'
 #' Average butterfat content (percentages) of milk for random samples of twenty
 #' cows (ten two-year old and ten mature (greater than four years old)) from
 #' each of five breeds. The data are from Canadian records of pure-bred dairy
 #' cattle.
-#' 
-#' 
+#'
+#'
 #' @name butterfat
 #' @docType data
 #' @format A data frame with 100 observations on the following 3 variables.
@@ -361,10 +361,10 @@ NULL
 #' @source Sokal, R. R. and Rohlf, F. J. (1994) Biometry. W. H. Freeman, New York, third edition.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(butterfat)
 #' ## maybe str(butterfat) ; plot(butterfat) ...
-#' 
+#'
 NULL
 
 
@@ -372,10 +372,10 @@ NULL
 
 
 #' Cathedral nave heights and lengths in England
-#' 
+#'
 #' Example Dataset from "Practical Regression and Anova"
-#' 
-#' 
+#'
+#'
 #' @name cathedral
 #' @docType data
 #' @format A dataset with 25 cases \describe{
@@ -393,13 +393,13 @@ NULL
 
 
 #' Taste of Cheddar cheese
-#' 
+#'
 #' In a study of cheddar cheese from the LaTrobe Valley of Victoria, Australia,
 #' samples of cheese were analyzed for their chemical composition and were
 #' subjected to taste tests. Overall taste scores were obtained by combining
 #' the scores from several tasters.
-#' 
-#' 
+#'
+#'
 #' @name cheddar
 #' @docType data
 #' @format A data frame with 30 observations on the following 4 variables.
@@ -407,14 +407,14 @@ NULL
 #' \item{Acetic}{concentration of acetic acid (log scale)}
 #' \item{H2S}{concentration of hydrogen sulfide (log scale)}
 #' \item{Lactic}{concentration of lactic acid} }
-#' @source David S. Moore and George P. McCabe (1993) Introduction to the Practice of Statistics, 
-#' W. H. Freeman and company, second edition. 
+#' @source David S. Moore and George P. McCabe (1993) Introduction to the Practice of Statistics,
+#' W. H. Freeman and company, second edition.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(cheddar)
 #' ## maybe str(cheddar) ; plot(cheddar) ...
-#' 
+#'
 NULL
 
 
@@ -422,16 +422,16 @@ NULL
 
 
 #' Chicago insurance redlining
-#' 
+#'
 #' Data from a 1970's study on the relationship between insurance redlining in
 #' Chicago and racial composition, fire and theft rates, age of housing and
-#' income in 47 zip codes. 
-#' 
-#' 
+#' income in 47 zip codes.
+#'
+#'
 #' @name chicago
 #' @docType data
 #' @format This dataframe contains the following columns \describe{
-#' 
+#'
 #' \item{race}{ racial composition in percent minority }
 #' \item{fire}{ fires per 100 housing units } \item{theft}{
 #' theft per 1000 population } \item{age}{ percent of housing units
@@ -439,7 +439,7 @@ NULL
 #' renewals per 100 housing units } \item{income}{ median family income
 #' in thousands of dollars} \item{side}{ North or South side of
 #' Chicago}
-#' 
+#'
 #' }
 #' @source Adapted from "Data : A Collection of Problems from Many Fields for
 #' the Student and Research Worker" by D. Andrews and A. Herzberg published by
@@ -449,10 +449,10 @@ NULL
 
 
 #' Chicago zip codes north-south
-#' 
+#'
 #' Complements the chicago and chmiss datasets by dividing the zip codes into
 #' north and south
-#' 
+#'
 #' @name chiczip
 #' @docType data
 #' @format \describe{
@@ -469,16 +469,16 @@ NULL
 
 
 #' Chicago insurance redlining
-#' 
+#'
 #' Data from a 1970's study on the relationship between insurance redlining in
 #' Chicago and racial composition, fire and theft rates, age of housing and
 #' income in 47 zip codes. Missing values have been randomly added.
-#' 
-#' 
+#'
+#'
 #' @name chmiss
 #' @docType data
 #' @format This dataframe contains the following columns \describe{
-#' 
+#'
 #' \item{race}{ racial composition in percent minority }
 #' \item{fire}{ fires per 100 housing units } \item{theft}{
 #' theft per 1000 population } \item{age}{ percent of housing units
@@ -486,7 +486,7 @@ NULL
 #' renewals per 100 housing units } \item{income}{ median family income
 #' in thousands of dollars} \item{side}{ North or South side of
 #' Chicago}
-#' 
+#'
 #' }
 #' @source Adapted from "Data : A Collection of Problems from Many Fields for
 #' the Student and Research Worker" by D. Andrews and A. Herzberg published by
@@ -499,15 +499,15 @@ NULL
 
 
 #' Chocolate cake experiment with split plot design
-#' 
+#'
 #' An experiment was conducted to determine the effect of recipe and baking
 #' temperature on chocolate cake quality. 15 batches of cake mix for each
 #' recipe were prepared. Each batch was sufficient for six cakes. Each of the
 #' six cakes was baked at a different temperature which was randomly assigned.
 #' Several measures of cake quality were recorded of which breaking angle was
 #' just one.
-#' 
-#' 
+#'
+#'
 #' @name choccake
 #' @docType data
 #' @format A data frame with 270 observations on the following 4 variables.
@@ -526,16 +526,16 @@ NULL
 
 
 #' Chicago insurance redlining
-#' 
+#'
 #' Data from a 1970's study on the relationship between insurance redlining in
 #' Chicago and racial composition, fire and theft rates, age of housing and
 #' income in 47 zip codes
-#' 
-#' 
+#'
+#'
 #' @name chredlin
 #' @docType data
 #' @format This dataframe contains the following columns \describe{
-#' 
+#'
 #' \item{race}{ racial composition in percent minority }
 #' \item{fire}{ fires per 100 housing units } \item{theft}{
 #' theft per 1000 population } \item{age}{ percent of housing units
@@ -554,11 +554,11 @@ NULL
 
 
 #' Blood clotting times
-#' 
+#'
 #' The clotting times of blood for plasma diluted with nine different
 #' percentage concentrations with prothrombin-free plasma
-#' 
-#' 
+#'
+#'
 #' @name clot
 #' @docType data
 #' @format This data frame contains the following columns: \describe{
@@ -575,11 +575,11 @@ NULL
 
 
 #' Social class mobility from 1971 to 1981 in the UK
-#' 
+#'
 #' Social class mobility from 1971 to 1981 for 42425 men from the United
 #' Kingdom census. Subjects were aged 45-64.
-#' 
-#' 
+#'
+#'
 #' @name cmob
 #' @docType data
 #' @format A data frame with 36 observations on the following 3 variables.
@@ -600,12 +600,12 @@ NULL
 
 
 #' Malformations of the central nervous system
-#' 
+#'
 #' Frequencies of various malformations of the central nervous system recorded
 #' on live births in South Wales, UK. Study was designed to determine the
 #' effect of water hardness on the incidence of such malformations.
-#' 
-#' 
+#'
+#'
 #' @name cns
 #' @docType data
 #' @format A data frame with 16 observations on the following 7 variables.
@@ -629,18 +629,18 @@ NULL
 
 
 #' Blood coagulation times by diet
-#' 
+#'
 #' Dataset comes from a study of blood coagulation times. 24 animals were
 #' randomly assigned to four different diets and the samples were taken in a
 #' random order.
-#' 
-#' 
+#'
+#'
 #' @name coagulation
 #' @docType data
 #' @format This dataframe contains the following columns \describe{
-#' 
+#'
 #' \item{coag}{ coagulation time in seconds }
-#' 
+#'
 #' \item{diet}{ diet type - A,B,C or D } }
 #' @source "Statistics for Experimenters" by G. P. Box, W. G. Hunter and J. S.
 #' Hunter, Wiley, 1978
@@ -652,12 +652,12 @@ NULL
 
 
 #' Strength of a thermoplastic composite depending on two factors
-#' 
+#'
 #' The \code{composite} data frame has 9 rows and 3 columns. Data comes from an
 #' experiment to test the strength of a thermoplastic composite depending on
 #' the power of a laser and speed of a tape.
-#' 
-#' 
+#'
+#'
 #' @name composite
 #' @docType data
 #' @format This data frame contains the following columns: \describe{
@@ -675,11 +675,11 @@ NULL
 
 
 #' Corn yields from nitrogen application
-#' 
+#'
 #' The relationship between corn yield (bushels per acre) and nitrogen (pounds
 #' per acre) fertilizer application were studied in Wisconsin.
-#' 
-#' 
+#'
+#'
 #' @name cornnit
 #' @docType data
 #' @format A data frame with 44 observations on the following 2 variables.
@@ -694,16 +694,16 @@ NULL
 
 
 #' Corrosion loss in Cu-Ni alloys
-#' 
+#'
 #' Data consist of thirteen specimens of 90/10 Cu-Ni alloys with varying iron
 #' content in percent. The specimens were submerged in sea water for 60 days
 #' and the weight loss due to corrosion was recorded in units of milligrams per
 #' square decimeter per day.
-#' 
+#'
 #' @name corrosion
 #' @docType data
 #' @format This dataframe contains the following columns \describe{
-#' 
+#'
 #' \item{Fe}{ Iron content in percent } \item{loss}{ Weight
 #' loss in mg per square decimeter per day } }
 #' @source "Applied Regression Analysis" by N. Draper and H. Smith, Wiley, 1998
@@ -715,11 +715,11 @@ NULL
 
 
 #' Projected and actual sales of 20 consumer products
-#' 
+#'
 #' Projected and actual sales of 20 consumer products. Data have been disguised
 #' from original form.
-#' 
-#' 
+#'
+#'
 #' @name cpd
 #' @docType data
 #' @format A data frame with 20 observations on the following 2 variables.
@@ -735,7 +735,7 @@ NULL
 
 
 #' Crawling babies by month
-#' 
+#'
 #' A study investigated whether babies take longer to learn to crawl in cold
 #' months when they are often bundled in clothes that restrict their movement,
 #' than in warmer months. The study sought an association between babies' first
@@ -745,8 +745,8 @@ NULL
 #' The parents reported the birth month and age at which their child was first
 #' able to creep or crawl a distance of four feet in one minute.  Data were
 #' collected on 208 boys and 206 girls (40 pairs of which were twins)
-#' 
-#' 
+#'
+#'
 #' @name crawl
 #' @docType data
 #' @format A data frame with 12 observations on the following 4 variables.
@@ -757,10 +757,10 @@ NULL
 #' @source Benson, Janette. (1993). Infant Behavior and Development
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(crawl)
 #' ## maybe str(crawl) ; plot(crawl) ...
-#' 
+#'
 NULL
 
 
@@ -768,7 +768,7 @@ NULL
 
 
 #' Effects of surface and vision on balance.
-#' 
+#'
 #' An experiment was conducted to study the effects of surface and vision on
 #' balance. The balance of subjects were observed for two different surfaces
 #' and for restricted and unrestricted vision. Balance was assessed
@@ -779,8 +779,8 @@ NULL
 #' their eyes closed or open or with a dome placed over their head.  Each
 #' subject was tested twice in each of the surface and eye combinations for a
 #' total of 12 measures per subject.
-#' 
-#' 
+#'
+#'
 #' @name ctsib
 #' @docType data
 #' @format A data frame with 480 observations on the following 8 variables.
@@ -795,10 +795,10 @@ NULL
 #' thesis, Depart- ment of Physiotherapy, University of Queensland.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(ctsib)
 #' ## maybe str(ctsib) ; plot(ctsib) ...
-#' 
+#'
 NULL
 
 
@@ -806,11 +806,11 @@ NULL
 
 
 #' Death penalty in Florida 1977
-#' 
+#'
 #' Data on 326 defendents in homicide indictments in 20 Florida counties during
 #' 1976-77.
-#' 
-#' 
+#'
+#'
 #' @name death
 #' @docType data
 #' @format A data frame with 8 observations on the following 4 variables.
@@ -829,15 +829,15 @@ NULL
 
 
 #' psychology of debt
-#' 
+#'
 #' The data arise from a large postal survey on the psychology of debt.
-#' 
+#'
 #' All yes/no questions are coded 0=no, 1=yes. Locus of control is a
 #' personality measure introduced by Rotter, which claims to differentiate
 #' people according to how much they feel things that happen to them are as a
 #' result of processes within themselves (internal locus of control) or outside
 #' events (external locus of control).
-#' 
+#'
 #' @name debt
 #' @docType data
 #' @format A data frame with 464 observations on the following 13 variables.
@@ -854,7 +854,7 @@ NULL
 #' of control scale (high values=internal)} \item{prodebt}{score on a scale of
 #' attitudes to debt (high values=favourable to debt} }
 #' @source Lea, Webley & Walker, 1995, Journal of Economic Psychology, 16,
-#' 181-201 Data obtained from \url{http://www.exeter.ac.uk/~SEGLea}.
+#' 181-201 Data obtained from \url{http://people.exeter.ac.uk/SEGLea/}.
 #' @keywords datasets
 NULL
 
@@ -863,15 +863,15 @@ NULL
 
 
 #' Denim wastage by supplier
-#' 
+#'
 #' Five suppliers cut denim material for a jeans manufacturer. An algorithm is
 #' used to estimate how much material will be wasted given the dimensions of
 #' the material supplied. Typically, a supplier wastes more material than the
 #' target based on the algorithm although occasionally they waste less. The
 #' percentage of waste relative to target was collected weekly for the 5
 #' suppliers. In all, 95 observations were recorded.
-#' 
-#' 
+#'
+#'
 #' @name denim
 #' @docType data
 #' @format A data frame with 95 observations on the following 2 variables.
@@ -881,10 +881,10 @@ NULL
 #' @source Unknown
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(denim)
 #' ## maybe str(denim) ; plot(denim) ...
-#' 
+#'
 NULL
 
 
@@ -892,14 +892,14 @@ NULL
 
 
 #' Diabetes and obesity, cardiovascular risk factors
-#' 
+#'
 #' 403 African Americans were interviewed in a study to understand the
 #' prevalence of obesity, diabetes, and other cardiovascular risk factors in
 #' central Virginia.
-#' 
+#'
 #' Glycosolated hemoglobin greater than 7.0 is usually taken as a positive
 #' diagnosis of diabetes
-#' 
+#'
 #' @name diabetes
 #' @docType data
 #' @format A data frame with 403 observations on the following 19 variables.
@@ -933,11 +933,11 @@ NULL
 
 
 #' Radiation dose effects on chromosomal abnormality
-#' 
+#'
 #' An experiment was conducted to determine the effect of gamma radiation on
 #' the numbers of chromosomal abnormalities observed
-#' 
-#' 
+#'
+#'
 #' @name dicentric
 #' @docType data
 #' @format A data frame with 27 observations on the following 4 variables.
@@ -958,10 +958,10 @@ NULL
 
 
 #' Divorce in the USA 1920-1996
-#' 
+#'
 #' Divorce rates in the USA from 1920-1996
-#' 
-#' 
+#'
+#'
 #' @name divusa
 #' @docType data
 #' @format A data frame with 77 observations on the following 7 variables.
@@ -980,11 +980,11 @@ NULL
 
 
 #' Choice of drug treatment for psychiatry patients
-#' 
+#'
 #' A sample of psychiatry patients were cross-classified by their diagnosis and
 #' whether a drug treatment was prescribed.
-#' 
-#' 
+#'
+#'
 #' @name drugpsy
 #' @docType data
 #' @format A data frame with 10 observations on the following 3 variables.
@@ -1005,11 +1005,11 @@ NULL
 
 
 #' Doctor visits in Australia
-#' 
+#'
 #' The data come from the Australian Health Survey of 1977-78 and consist of
 #' 5190 single adults where young and old have been oversampled.
-#' 
-#' 
+#'
+#'
 #' @name dvisits
 #' @docType data
 #' @format A data frame with 5190 observations on the following 19 variables.
@@ -1059,11 +1059,11 @@ NULL
 
 
 #' Ecological regression example
-#' 
+#'
 #' Relationship between 1998 per capita income dollars from all sources and the
 #' proportion of legal state residents born in the United States in 1990 for
 #' each of the 50 states plus the District of Columbia
-#' 
+#'
 #' @name eco
 #' @docType data
 #' @format This dataframe contains the following columns \describe{
@@ -1080,13 +1080,13 @@ NULL
 
 
 #' Treatment and block effects on egg production
-#' 
+#'
 #' The \code{eggprod} data frame has 12 rows and 3 columns.  Six pullets were
 #' placed into each of 12 pens. Four blocks were formed from groups of 3 pens
 #' based on location. Three treatments were applied. The number of eggs
 #' produced was recorded
-#' 
-#' 
+#'
+#'
 #' @name eggprod
 #' @docType data
 #' @format This data frame contains the following columns: \describe{
@@ -1102,7 +1102,7 @@ NULL
 
 
 #' Nested data on lab testing of eggs
-#' 
+#'
 #' Consistency between laboratory tests is important and yet the results may
 #' depend on who did the test and where the test was performed. In an
 #' experiment to test levels of consistency, a large jar of dried egg powder
@@ -1115,8 +1115,8 @@ NULL
 #' samples into two parts and measure the fat content of each.  So each
 #' laboratory reported eight measures, each technician four measures, that is,
 #' two replicated measures on each of two samples.
-#' 
-#' 
+#'
+#'
 #' @name eggs
 #' @docType data
 #' @format A data frame with 48 observations on the following 4 variables.
@@ -1127,10 +1127,10 @@ NULL
 #' @source Bliss, C. I. (1967). Statistics in Biology. New York: McGraw Hill.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(eggs)
 #' ## maybe str(eggs) ; plot(eggs) ...
-#' 
+#'
 NULL
 
 
@@ -1138,14 +1138,14 @@ NULL
 
 
 #' Epileptic seizures in clinical trial of drug
-#' 
+#'
 #' Data from a clinical trial of 59 epileptics.  For a baseline, patients were
 #' observed for 8 weeks and the number of seizures recorded. The patients were
 #' then randomized to treatment by the drug Progabide (31 patients) or to the
 #' placebo group (28 patients).  They were observed for four 2-week periods and
 #' the number of seizures recorded.
-#' 
-#' 
+#'
+#'
 #' @name epilepsy
 #' @docType data
 #' @format A data frame with 295 observations on the following 6 variables.
@@ -1162,10 +1162,10 @@ NULL
 #' longitudinal count data with overdispersion. Biometrics 46, 657-671.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(epilepsy)
 #' ## maybe str(epilepsy) ; plot(epilepsy) ...
-#' 
+#'
 NULL
 
 
@@ -1173,11 +1173,11 @@ NULL
 
 
 #' Complaints about emergency room doctors
-#' 
+#'
 #' Data was recorded on 44 doctors working in an emergency service at a
 #' hospital to study the factors affecting the number of complaints received.
-#' 
-#' 
+#'
+#'
 #' @name esdcomp
 #' @docType data
 #' @format A data frame with 44 observations on the following 6 variables.
@@ -1196,10 +1196,10 @@ NULL
 
 
 #' Simulated non-parametric regression data
-#' 
+#'
 #' True function is f(x)=sin^3(2pi x^3).
-#' 
-#' 
+#'
+#'
 #' @name exa
 #' @docType data
 #' @format A data frame with 256 observations on the following 3 variables.
@@ -1209,10 +1209,10 @@ NULL
 #' New York:Springer.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(exa)
 #' ## maybe str(exa) ; plot(exa) ...
-#' 
+#'
 NULL
 
 
@@ -1220,10 +1220,10 @@ NULL
 
 
 #' Simulated non-parametric regression data
-#' 
+#'
 #' True function is f(x)=0
-#' 
-#' 
+#'
+#'
 #' @name exb
 #' @docType data
 #' @format A data frame with 256 observations on the following 3 variables.
@@ -1233,10 +1233,10 @@ NULL
 #' New York:Springer.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(exa)
 #' ## maybe str(exa) ; plot(exa) ...
-#' 
+#'
 NULL
 
 
@@ -1244,11 +1244,11 @@ NULL
 
 
 #' grading of eye pairs for distance vision
-#' 
+#'
 #' A sample of women are rated for the performance of distance vision in each
 #' eye.
-#' 
-#' 
+#'
+#'
 #' @name eyegrade
 #' @docType data
 #' @format A data frame with 16 observations on the following 3 variables.
@@ -1266,12 +1266,12 @@ NULL
 
 
 #' Percentage of Body Fat and Body Measurements
-#' 
+#'
 #' Age, weight, height, and 10 body circumference measurements are recorded for
 #' 252 men. Each man's percentage of body fat was accurately estimated by an
 #' underwater weighing technique.
-#' 
-#' 
+#'
+#'
 #' @name fat
 #' @docType data
 #' @format A data frame with 252 observations on the following 18 variables.
@@ -1300,13 +1300,13 @@ NULL
 
 
 #' Mortality due to smoking according age group in women
-#' 
+#'
 #' In 1972-74, a survey of one in six residents of Whickham, near Newcastle,
 #' England was made. Twenty years later, this data recorded in a follow-up
 #' study. Only women who are current smokers or who have never smoked are
 #' included.
-#' 
-#' 
+#'
+#'
 #' @name femsmoke
 #' @docType data
 #' @format A data frame with 28 observations on the following 4 variables.
@@ -1325,26 +1325,26 @@ NULL
 
 
 #' Billionaires' wealth and age
-#' 
+#'
 #' Fortune magazine publishes a f the world's billionaires each year. The
 #' 1992 list includes 233 individuals. Their wealth, age, and geographic
 #' location (Asia, Europe, Middle East, United States, and Other) are reported.
-#' 
-#' 
+#'
+#'
 #' @name fortune
 #' @docType data
 #' @format A data frame with 232 observations on the following 3 variables.
-#' \describe{ 
-#' \item{wealth}{Billions of dollars} 
+#' \describe{
+#' \item{wealth}{Billions of dollars}
 #' \item{age}{age in years} \item{region}{a factor with levels \code{A}, Asia,
 #' \code{E}, Europe, \code{M}, Middle East, \code{O} Other, \code{U} USA} }
 #' @source Fortune magazine
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(fortune)
 #' ## maybe str(fortune) ; plot(fortune) ...
-#' 
+#'
 NULL
 
 
@@ -1352,7 +1352,7 @@ NULL
 
 
 #' 1981 French Presidential Election
-#' 
+#'
 #' Elections for the French presidency proceed in two rounds. In 1981, there
 #' were 10 candidates in the first round. The top two candidates then went on
 #' to the second round, which was won by Francois Mitterand over Valery
@@ -1361,13 +1361,13 @@ NULL
 #' voting is private, we cannot know how these votes were transferred, we might
 #' hope to infer from the published vote totals how this might have happened.
 #' Data is given for vote totals in every fourth department of France:
-#' 
+#'
 #' @name fpe
 #' @docType data
 #' @format This dataframe contains the following columns (vote totals are in
 #' thousands) \describe{ \item{list("EI}{ Electeur Inscrits (registered
 #' voters)}
-#' 
+#'
 #' \item{A}{ Voters for Mitterand in the first round} \item{B}{
 #' Voters for Giscard in the first round} \item{C}{ Voters for Chirac
 #' in the first round} \item{D}{ Voters for Communists in the first
@@ -1380,7 +1380,7 @@ NULL
 #' Mitterand in the second round} \item{B2}{ Voters for party Giscard
 #' in the second round} \item{N}{ Difference between the number of
 #' voters in the second round and in the first round}
-#' 
+#'
 #' }
 #' @source "The Teaching of Practical Statistics" by C.W. Anderson and R.M.
 #' Loynes, Wiley,1987
@@ -1392,7 +1392,7 @@ NULL
 
 
 #' Longevity of fruitflies depending on sexual activity and thorax length
-#' 
+#'
 #' The \code{fruitfly} data frame has 9 rows and 3 columns.  125 fruitflies
 #' were divided randomly into 5 groups of 25 each. The response was the
 #' longevity of the fruitfly in days. One group was kept solitary, while
@@ -1402,12 +1402,12 @@ NULL
 #' fruitflies will not mate. The thorax length of each male was measured as
 #' this was known to affect longevity. One observation in the many group has
 #' been lost.
-#' 
-#' 
+#'
+#'
 #' @name fruitfly
 #' @docType data
 #' @format This data frame contains the following columns: \describe{
-#' 
+#'
 #' \item{thorax}{ Thorax length } \item{longevity}{ Lifetime in
 #' days } \item{activity}{ The group: isolated = fly kept solitary, one
 #' = fly kept with one pregnant fruitfly, many = fly kept with eight pregnant
@@ -1423,14 +1423,14 @@ NULL
 
 
 #' Species diversity on the Galapagos Islands
-#' 
+#'
 #' There are 30 Galapagos islands and 7 variables in the dataset. The
 #' relationship between the number of plant species and several geographic
 #' variables is of interest. The original dataset contained several missing
 #' values which have been filled for convenience. See the \code{galamiss}
 #' dataset for the original version.
-#' 
-#' 
+#'
+#'
 #' @name gala
 #' @docType data
 #' @format The dataset contains the following variables \describe{
@@ -1451,13 +1451,13 @@ NULL
 
 
 #' Species diversity on the Galapagos Islands
-#' 
+#'
 #' There are 30 Galapagos islands and 7 variables in the dataset. The
 #' relationship between the number of plant species and several geographic
 #' variables is of interest. This is the original version of the dataset
 #' containing missing values.
-#' 
-#' 
+#'
+#'
 #' @name galamiss
 #' @docType data
 #' @format The dataset contains the following variables \describe{
@@ -1478,13 +1478,13 @@ NULL
 
 
 #' Xray decay from a gamma ray burst
-#' 
+#'
 #' The X-ray decay light curve of Gamma ray burst 050525a obtained with the
 #' X-Ray Telescope (XRT) on board the Swift satellite. The dataset has 63
 #' brightness measurements in the 0.4-4.5 keV spectral band at times ranging
 #' from 2 minutes to 5 days after the burst.
-#' 
-#' 
+#'
+#'
 #' @name gammaray
 #' @docType data
 #' @format A data frame with 63 observations on the following 3 variables.
@@ -1496,10 +1496,10 @@ NULL
 #' Available at http://arxiv.org/abs/astro-ph/0507515.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(gammaray)
 #' ## maybe str(gammaray) ; plot(gammaray) ...
-#' 
+#'
 NULL
 
 
@@ -1507,14 +1507,14 @@ NULL
 
 
 #' Undercounted votes in Georgia in 2000 presidential election
-#' 
+#'
 #' The data comes from the US presidential election in the state of Georgia.
 #' The undercount is the difference between the number of ballots cast and
 #' votes recorded. Voters may have chosen not to vote for president, voted for
 #' more than one candidate (disqualified) or the equipment may have failed to
 #' register their choice.
-#' 
-#' 
+#'
+#'
 #' @name gavote
 #' @docType data
 #' @format A data frame with 159 observations on the following 10 variables.
@@ -1540,17 +1540,17 @@ NULL
 
 
 #' Northern Hemisphere temperatures and climate proxies in the last millenia
-#' 
+#'
 #' Average Northen Hemisphere Temperature from 1856-2000 and eight climate
 #' proxies from 1000-2000AD. Data can be used to predict temperatures prior to
 #' 1856.
-#' 
+#'
 #' See the source and references below for the original data. Only some proxies
 #' have been included here. Some missing values have been imputed. The proxy
 #' data have been smoothed. This version of the data is intended only for
 #' demonstration purposes. If you are specifically interested in the subject
 #' matter, use the original data.
-#' 
+#'
 #' @name globwarm
 #' @docType data
 #' @format A data frame with 1001 observations on the following 10 variables.
@@ -1569,10 +1569,10 @@ NULL
 #' Reviews of Geophysics, Vol. 42, No. 2, RG2002, doi:10.1029/2003RG000143
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(globwarm)
 #' ## maybe str(globwarm) ; plot(globwarm) ...
-#' 
+#'
 NULL
 
 
@@ -1580,10 +1580,10 @@ NULL
 
 
 #' Hair and eye color
-#' 
+#'
 #' Data collected from 592 students in an introductory statistics class
-#' 
-#' 
+#'
+#'
 #' @name haireye
 #' @docType data
 #' @format A data frame with 16 observations on the following 3 variables.
@@ -1601,10 +1601,10 @@ NULL
 
 
 #' love, work and happiness
-#' 
+#'
 #' Data were collected from 39 students in a University of Chicago MBA class
-#' 
-#' 
+#'
+#'
 #' @name happy
 #' @docType data
 #' @format A data frame with 39 observations on the following 5 variables.
@@ -1623,14 +1623,14 @@ NULL
 
 
 #' Treatment of insulin dependent diabetic children
-#' 
+#'
 #' 16 insulin-dependent diabetic children were enrolled in a study involving a
 #' new treatment. 8 children received the new treatment(N) while the other 8
 #' received the standard treatment(S).  The age and sex of the child was
 #' recorded along with the measured value of gycosolated hemoglobin both before
 #' and after treatment.
-#' 
-#' 
+#'
+#'
 #' @name hemoglobin
 #' @docType data
 #' @format A data frame with 16 observations on the following 5 variables.
@@ -1642,10 +1642,10 @@ NULL
 #' @source Unknown
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(hemoglobin)
 #' ## maybe str(hemoglobin) ; plot(hemoglobin) ...
-#' 
+#'
 NULL
 
 
@@ -1653,15 +1653,15 @@ NULL
 
 
 #' Ankylosing Spondylitis
-#' 
+#'
 #' Data from Royal Mineral Hospital in Bath. AS is a chronic form of arthritis.
 #' A study conducted to determine whether daily stretching of the hip tissues
 #' would improve mobility.  39 ``typical'' AS patients were randomly allocated
 #' to control (standard treatment) group or the treatment group in a 1:2 ratio.
 #' Responses were flexion and rotation angles at the hip measured in degrees.
 #' Larger numbers indicate more flexibility.
-#' 
-#' 
+#'
+#'
 #' @name hips
 #' @docType data
 #' @format A data frame with 78 observations on the following 7 variables.
@@ -1675,10 +1675,10 @@ NULL
 #' Chapman Hall.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(hips)
 #' ## maybe str(hips) ; plot(hips) ...
-#' 
+#'
 NULL
 
 
@@ -1686,11 +1686,11 @@ NULL
 
 
 #' Hormone concentrations in gay and straight men
-#' 
+#'
 #' Urinary androsterone (androgen) and etiocholanolone (estrogen) values were
 #' recorded from 26 healthy males.
-#' 
-#' 
+#'
+#'
 #' @name hormone
 #' @docType data
 #' @format A data frame with 26 observations on the following 3 variables.
@@ -1703,10 +1703,10 @@ NULL
 #' Hormones and Behavior 1, 151-155.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(hormone)
 #' ## maybe str(hormone) ; plot(hormone) ...
-#' 
+#'
 NULL
 
 
@@ -1714,11 +1714,11 @@ NULL
 
 
 #' Housing prices in US cities 86-94
-#' 
+#'
 #' Data on housing prices in 36 US metropolitan statistical areas (MSAs) over 9
 #' years from 1986-1994 were collected.
-#' 
-#' 
+#'
+#'
 #' @name hprice
 #' @docType data
 #' @format A data frame with 324 observations on the following 8 variables.
@@ -1740,15 +1740,15 @@ NULL
 
 
 #' Career choice of high school students
-#' 
+#'
 #' Data was collected as a subset of the "High School and Beyond" study
 #' conducted by the National Education Longitudinal Studies (NELS) program of
 #' the National Center for Education Statistics (NCES).
-#' 
+#'
 #' One purpose of the study was to determine which factors are related to the
 #' choice of the type of program, academic, vocational or general, that the
 #' students pursue in high school.
-#' 
+#'
 #' @name hsb
 #' @docType data
 #' @format A data frame with 200 observations on the following 11 variables.
@@ -1773,19 +1773,19 @@ NULL
 
 
 #' Infant mortality according to income and region
-#' 
+#'
 #' The \code{infmort} data frame has 105 rows and 4 columns.  The infant
 #' mortality in regions of the world may be related to per capita income and
 #' whether oil is exported. The dataset is not recent.
-#' 
-#' 
+#'
+#'
 #' @name infmort
 #' @docType data
 #' @format This data frame contains the following columns: \describe{
-#' 
+#'
 #' \item{region}{ Region of the world, Africa, Europe, Asia or the
 #' Americas } \item{income}{ Per capita annual income in dollars }
-#' 
+#'
 #' \item{mortality}{ Infant mortality in deaths per 1000 births }
 #' \item{oil}{ Does the country export oil or not?  } }
 #' @source Unknown
@@ -1797,13 +1797,13 @@ NULL
 
 
 #' Effects of insulation on gas consumption
-#' 
+#'
 #' Data on natural gas usage in a house.  The weekly gas consumption (in 1000
 #' cubic feet) and the average outside temperature (in degrees Celsius) was
 #' recorded for 26 weeks before and 30 weeks after cavity-wall insulation had
 #' been installed.  The house thermostat was set at 20C throughout.
-#' 
-#' 
+#'
+#'
 #' @name insulgas
 #' @docType data
 #' @format A data frame with 44 observations on the following 3 variables.
@@ -1813,10 +1813,10 @@ NULL
 #' @source MASS package as whiteside
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(insulgas)
 #' ## maybe str(insulgas) ; plot(insulgas) ...
-#' 
+#'
 NULL
 
 
@@ -1824,7 +1824,7 @@ NULL
 
 
 #' Irrigation methods in an agricultural field trial
-#' 
+#'
 #' In an agricultural field trial, the objective was to determine the effects
 #' of two crop varieties and four different irrigation methods. Eight fields
 #' were available, but only one type of irrigation may be applied to each
@@ -1832,8 +1832,8 @@ NULL
 #' planted in each half.  The whole plot factor is the method of irrigation,
 #' which should be randomly assigned to the fields. Within each field, the
 #' variety is randomly assigned.
-#' 
-#' 
+#'
+#'
 #' @name irrigation
 #' @docType data
 #' @format A data frame with 16 observations on the following 4 variables.
@@ -1845,10 +1845,10 @@ NULL
 #' @source Found online but source not recorded.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(irrigation)
 #' ## maybe str(irrigation) ; plot(irrigation) ...
-#' 
+#'
 NULL
 
 
@@ -1856,11 +1856,11 @@ NULL
 
 
 #' Junior School Project
-#' 
+#'
 #' Junior School Project collected from primary (U.S. term is elementary)
 #' schools in inner London.
-#' 
-#' 
+#'
+#'
 #' @name jsp
 #' @docType data
 #' @format A data frame with 3236 observations on the following 9 variables.
@@ -1878,10 +1878,10 @@ NULL
 #' School Matters. Wells, UK: Open Books.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(jsp)
 #' ## maybe str(jsp) ; plot(jsp) ...
-#' 
+#'
 NULL
 
 
@@ -1889,10 +1889,10 @@ NULL
 
 
 #' Kangaroo skull measurements
-#' 
+#'
 #' Sex and species of an specimens of kangaroo.
-#' 
-#' 
+#'
+#'
 #' @name kanga
 #' @docType data
 #' @format A data frame with 148 observations on the following 20 variables.
@@ -1920,10 +1920,10 @@ NULL
 #' @source Andrews and Herzberg (1985) Chapter 53.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(kanga)
 #' ## maybe str(kanga) ; plot(kanga) ...
-#' 
+#'
 NULL
 
 
@@ -1931,12 +1931,12 @@ NULL
 
 
 #' Cut-off times of lawnmowers
-#' 
+#'
 #' Data on the cut-off times of lawnmowers was collected. 3 machines were
 #' randomly selected from those produced by manufacturers A and B. Each machine
 #' was tested twice at low speed and high speed.
-#' 
-#' 
+#'
+#'
 #' @name lawn
 #' @docType data
 #' @format A data frame with 24 observations on the following 4 variables.
@@ -1954,11 +1954,11 @@ NULL
 
 
 #' Leaf blotch on barley
-#' 
+#'
 #' The data gives the proportion of leaf area affected by leaf blotch on 10
 #' varieties of barley at 9 different sites.
-#' 
-#' 
+#'
+#'
 #' @name leafblotch
 #' @docType data
 #' @format A data frame with 90 observations on the following 3 variables.
@@ -1980,10 +1980,10 @@ NULL
 
 
 #' Data on the burning time of samples of tobacco leaves
-#' 
+#'
 #' Data on the burning time of samples of tobacco leaves
-#' 
-#' 
+#'
+#'
 #' @name leafburn
 #' @docType data
 #' @format A data frame with 30 observations on the following 4 variables.
@@ -2001,11 +2001,11 @@ NULL
 
 
 #' Sleep in Mammals: Ecological and Constitutional Correlates
-#' 
+#'
 #' The \code{mammalsleep} data frame has 62 rows and 10 columns. Sleep in
 #' Mammals: Ecological and Constitutional Correlates
-#' 
-#' 
+#'
+#'
 #' @name mammalsleep
 #' @docType data
 #' @format This data frame contains the following columns: \describe{
@@ -2032,14 +2032,14 @@ NULL
 
 
 #' Mayer's 1750 data on the Manilius crater on the moon
-#' 
+#'
 #' In 1750, Tobias Mayer collected data on various landmarks on the moon in
 #' order to determine its orbit. The data involving the position of the
 #' Manilius crater resulted in a least squares like problem. The example is
 #' discussed in Steven Stigler's History of Statistics.
-#' 
+#'
 #' See Stigler for a detailed description.
-#' 
+#'
 #' @name manilius
 #' @docType data
 #' @format A data frame with 27 observations on the following 4 variables.
@@ -2053,9 +2053,9 @@ NULL
 #' @source Stigler, S. (1986) History of Statistics. Belknap Press, Harvard.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(manilius)
-#' 
+#'
 NULL
 
 
@@ -2063,7 +2063,7 @@ NULL
 
 
 #' Meat spectrometry to determine fat content
-#' 
+#'
 #' A Tecator Infratec Food and Feed Analyzer working in the wavelength range
 #' 850 - 1050 nm by the Near Infrared Transmission (NIT) principle was used to
 #' collect data on samples of finely chopped pure meat. 215 samples were
@@ -2072,7 +2072,7 @@ NULL
 #' analytical chemistry is time consuming we would like to build a model to
 #' predict the fat content of new samples using the 100 absorbances which can
 #' be measured more easily.
-#' 
+#'
 #' @name meatspec
 #' @docType data
 #' @format Dataset contains the following variables \describe{
@@ -2088,10 +2088,10 @@ NULL
 
 
 #' Melanoma by type and location
-#' 
+#'
 #' Data comes from a study of Malignant Melanoma involving 400 subjects.
-#' 
-#' 
+#'
+#'
 #' @name melanoma
 #' @docType data
 #' @format A data frame with 12 observations on the following 3 variables.
@@ -2109,15 +2109,15 @@ NULL
 
 
 #' Third party motor insurance claims in Sweden in 1977
-#' 
+#'
 #' In Sweden all motor insurance companies apply identical risk arguments to
 #' classify customers, and thus their portfolios and their claims statistics
 #' can be combined. The data were compiled by a Swedish Committee on the
 #' Analysis of Risk Premium in Motor Insurance. The Committee was asked to look
 #' into the problem of analyzing the real influence on claims of the risk
 #' arguments and to compare this structure with the actual tariff.
-#' 
-#' 
+#'
+#'
 #' @name motorins
 #' @docType data
 #' @format A data frame with 1797 observations on the following 8 variables.
@@ -2145,10 +2145,10 @@ NULL
 
 
 #' Questionnaire study of neighborly help
-#' 
+#'
 #' Subjects were asked questions in a study of neighborly help. Questions below
 #' are a subset of the full study.
-#' 
+#'
 #' Exeter is a city in the county of Devon which is in Britain.  The four
 #' districts can be briefly described as follows. District 1 was a
 #' long-established residential area near the city centre, with housing dating
@@ -2161,7 +2161,7 @@ NULL
 #' was the most recently developed part of a more sought-after middle-class
 #' residential area, with smaller but almost entirely owner-occupied properties
 #' dating from the 1970s and 1980s.
-#' 
+#'
 #' @name neighbor
 #' @docType data
 #' @format A data frame with 181 observations on the following 8 variables.
@@ -2190,10 +2190,10 @@ NULL
 
 
 #' National Education Longitudinal Study of 1988
-#' 
+#'
 #' A subset of the National Education Longitudinal Study of 1988
-#' 
-#' 
+#'
+#'
 #' @name nels88
 #' @docType data
 #' @format A data frame with 260 observations on the following 5 variables.
@@ -2206,10 +2206,10 @@ NULL
 #' @source \url{http://www.icpsr.umich.edu/icpsrweb/ICPSR/series/107}
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(nels88)
 #' ## maybe str(nels88) ; plot(nels88) ...
-#' 
+#'
 NULL
 
 
@@ -2217,10 +2217,10 @@ NULL
 
 
 #' Nepali child heath study
-#' 
+#'
 #' The data are a subset from public health study on Nepalese children.
-#' 
-#' 
+#'
+#'
 #' @name nepali
 #' @docType data
 #' @format A data frame with 1000 observations on the following 9 variables.
@@ -2245,12 +2245,12 @@ NULL
 
 
 #' US 1996 national election study
-#' 
+#'
 #' 10 variable subset of the 1996 American National Election Study. Missing
 #' values and "don't know" responses have been se deleted. Respondents
 #' expressing a voting preference other than Clinton or Dole have been removed.
-#' 
-#' 
+#'
+#'
 #' @name nes96
 #' @docType data
 #' @format A data frame with 944 observations on the following 10 variables.
@@ -2299,10 +2299,10 @@ NULL
 
 
 #' New Hampshire Democratic Party Primary 2008
-#' 
+#'
 #' Votes and other demographic information from 276 wards in the 2008
 #' Democratic Party presidential primary.
-#' 
+#'
 #' On the 8th January 2008, primaries to select US presidential candidates were
 #' held in New Hampshire. In the Democratic party primary, Hillary Clinton
 #' defeated Barack Obama contrary to the expectations pre-election opinion
@@ -2313,7 +2313,7 @@ NULL
 #' machine counted ballots. Since the method of voting should make no causal
 #' difference to the outcome, suspicions have been raised regarding the
 #' integrity of the election.
-#' 
+#'
 #' @name newhamp
 #' @docType data
 #' @format A data frame with 276 observations on the following 12 variables.
@@ -2341,12 +2341,12 @@ NULL
 
 
 #' Yields of oat varieties planted in blocks
-#' 
+#'
 #' Data from an experiment to compare 8 varieties of oats. The growing area was
 #' heterogeneous and so was grouped into 5 blocks. Each variety was sown once
 #' within each block and the yield in grams per 16ft row was recorded.
-#' 
-#' 
+#'
+#'
 #' @name oatvar
 #' @docType data
 #' @format The dataset contains the following variables \describe{
@@ -2362,12 +2362,12 @@ NULL
 
 
 #' Odor of chemical by production settings
-#' 
+#'
 #' Data from an experiment to determine the effects of column temperature,
 #' gas/liquid ratio and packing height in reducing unpleasant odor of chemical
 #' product that was being sold for household use
-#' 
-#' 
+#'
+#'
 #' @name odor
 #' @docType data
 #' @format \describe{ \item{odor}{ Odor score} \item{temp}{
@@ -2383,12 +2383,12 @@ NULL
 
 
 #' Ohio Children Wheeze Status
-#' 
+#'
 #' The \code{ohio} data frame has 2148 rows and 4 columns. The dataset is a
 #' subset of the six-city study, a longitudinal study of the health effects of
 #' air pollution.
-#' 
-#' 
+#'
+#'
 #' @name ohio
 #' @docType data
 #' @format This data frame contains the following columns: \describe{
@@ -2407,12 +2407,12 @@ NULL
 
 
 #' Spache Shuttle Challenger O-rings
-#' 
+#'
 #' The 1986 crash of the space shuttle Challenger was linked to failure of
 #' O-ring seals in the rocket engines. Data was collected on the 23 previous
 #' shuttle missions. The launch temperature on the day of the crash was 31F.
-#' 
-#' 
+#'
+#'
 #' @name orings
 #' @docType data
 #' @format A data frame with 23 observations on the following 2 variables.
@@ -2431,12 +2431,12 @@ NULL
 
 
 #' Ozone in LA in 1976
-#' 
+#'
 #' A study the relationship between atmospheric ozone concentration and
 #' meteorology in the Los Angeles Basin in 1976.  A number of cases with
 #' missing variables have been removed for simplicity.
-#' 
-#' 
+#'
+#'
 #' @name ozone
 #' @docType data
 #' @format A data frame with 330 observations on the following 10 variables.
@@ -2451,10 +2451,10 @@ NULL
 #' American Statistical Association 80, 580-598.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(ozone)
 #' ## maybe str(ozone) ; plot(ozone) ...
-#' 
+#'
 NULL
 
 
@@ -2462,11 +2462,11 @@ NULL
 
 
 #' Marijuana and parent alcohol and drug use
-#' 
+#'
 #' 445 college students were classified according to both frequency of
 #' marijuana use and parental use of alcohol and psychoactive drugs.
-#' 
-#' 
+#'
+#'
 #' @name parstum
 #' @docType data
 #' @format A data frame with 9 observations on the following 3 variables.
@@ -2486,11 +2486,11 @@ NULL
 
 
 #' Carbon dioxide effects on peanut oil extraction
-#' 
+#'
 #' The \code{peanut} data frame has 16 rows and 6 columns. Carbon dioxide
 #' effects on peanut oil extraction
-#' 
-#' 
+#'
+#'
 #' @name peanut
 #' @docType data
 #' @format This data frame contains the following columns: \describe{
@@ -2511,12 +2511,12 @@ NULL
 
 
 #' Penicillin yield by block and treatment
-#' 
+#'
 #' The production of penicillin uses a raw material, corn steep liquor, is
 #' quite variable and can only be made in blends sufficient for four runs.
 #' There are four processes, A, B, C and D, for the production.
-#' 
-#' 
+#'
+#'
 #' @name penicillin
 #' @docType data
 #' @format A data frame with 20 observations on the following 3 variables.
@@ -2528,10 +2528,10 @@ NULL
 #' Experimenters. New York: Wiley.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(penicillin)
 #' ## maybe str(penicillin) ; plot(penicillin) ...
-#' 
+#'
 NULL
 
 
@@ -2539,10 +2539,10 @@ NULL
 
 
 #' Birth weights in Philadelphia
-#' 
+#'
 #' Data based on a 5% sample of all births occurring in Philadelphia in 1990.
-#' 
-#' 
+#'
+#'
 #' @name phbirths
 #' @docType data
 #' @format A data frame with 1115 observations on the following 5 variables.
@@ -2555,10 +2555,10 @@ NULL
 #' Meeting of the Population Association of America, Washington, DC 2001.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(phbirths)
 #' ## maybe str(phbirths) ; plot(phbirths) ...
-#' 
+#'
 NULL
 
 
@@ -2566,11 +2566,11 @@ NULL
 
 
 #' Diabetes survey on Pima Indians
-#' 
+#'
 #' The National Institute of Diabetes and Digestive and Kidney Diseases
 #' conducted a study on 768 adult female Pima Indians living near Phoenix.
-#' 
-#' 
+#'
+#'
 #' @name pima
 #' @docType data
 #' @format The dataset contains the following variables \describe{
@@ -2593,15 +2593,15 @@ NULL
 
 
 #' NIST data on ultrasonic measurements of defects in the Alaska pipeline
-#' 
+#'
 #' Researchers at National Institutes of Standards and Technology (NIST)
 #' collected data on ultrasonic measurements of the depths of defects in the
 #' Alaska pipeline in the field. The depth of the defects were then remeasured
 #' in the laboratory. These measurements were performed in six different
 #' batches. The laboratory measurements are more accurate than the in-field
 #' measurements, but more time consuming and expensive.
-#' 
-#' 
+#'
+#'
 #' @name pipeline
 #' @docType data
 #' @format A data frame with 107 observations on the following 3 variables.
@@ -2618,14 +2618,14 @@ NULL
 
 
 #' Pneumonoconiosis in coal miners
-#' 
+#'
 #' The data for this example contains the number of coal miners classified by
 #' radiological examination into one of three categories of
 #' pneumonoultramicroscopicosilicovolcanoconiosis (known as pneumonoconiosis
 #' for short) and by number of years spent working at the coal face divided
 #' into eight categories.
-#' 
-#' 
+#'
+#'
 #' @name pneumo
 #' @docType data
 #' @format A data frame with 24 observations on the following 3 variables.
@@ -2643,11 +2643,11 @@ NULL
 
 
 #' Marijuana usage by youth
-#' 
+#'
 #' The National Youth Survey collected a sample of 11 to 17 year olds - 117
 #' boys and 120 girls - asking questions about marijuana usage.
-#' 
-#' 
+#'
+#'
 #' @name potuse
 #' @docType data
 #' @format A data frame with 486 observations on the following 7 variables.
@@ -2673,18 +2673,18 @@ NULL
 
 
 #' Prostate cancer surgery
-#' 
+#'
 #' The \code{prostate} data frame has 97 rows and 9 columns. A study on 97 men
 #' with prostate cancer who were due to receive a radical prostatectomy.
-#' 
-#' 
+#'
+#'
 #' @name prostate
 #' @docType data
 #' @format This data frame contains the following columns: \describe{
-#' 
+#'
 #' \item{lcavol}{ log(cancer volume) } \item{lweight}{
 #' log(prostate weight) }
-#' 
+#'
 #' \item{age}{ age } \item{lbph}{ log(benign prostatic
 #' hyperplasia amount) } \item{svi}{ seminal vesicle invasion }
 #' \item{lcp}{ log(capsular penetration) } \item{gleason}{
@@ -2699,14 +2699,14 @@ NULL
 
 
 #' Panel Study of Income Dynamics subset
-#' 
+#'
 #' The Panel Study of Income Dynamics (PSID), begun in 1968, is a longitudinal
 #' study of a representative sample of U.S. individuals.  The study is
 #' conducted at the Survey Research Center, Institute for Social Research,
 #' University of Michigan and is still continuing. The data represents a small
 #' subset of the total data.
-#' 
-#' 
+#'
+#'
 #' @name psid
 #' @docType data
 #' @format A data frame with 1661 observations on the following 6 variables.
@@ -2724,11 +2724,11 @@ NULL
 
 
 #' Brightness of paper pulp depending on shift operator
-#' 
+#'
 #' The \code{pulp} data frame has 20 rows and 2 columns. Data comes from an
 #' experiment to test the paper brightness depending on a shift operator.
-#' 
-#' 
+#'
+#'
 #' @name pulp
 #' @docType data
 #' @format This data frame contains the following columns: \describe{
@@ -2744,12 +2744,12 @@ NULL
 
 
 #' Leg strength and punting
-#' 
+#'
 #' Investigators studied physical characteristics and ability in 13 (American)
 #' football punters. Each volunteer punted a football ten times. The
 #' investigators recorded the average distance for the ten punts, in feet.
-#' 
-#' 
+#'
+#'
 #' @name punting
 #' @docType data
 #' @format A data frame with 13 observations on the following 7 variables.
@@ -2762,10 +2762,10 @@ NULL
 #' @source Unknown
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(punting)
 #' ## maybe str(punting) ; plot(punting) ...
-#' 
+#'
 NULL
 
 
@@ -2773,12 +2773,12 @@ NULL
 
 
 #' Production of PVC by operator and resin railcar
-#' 
+#'
 #' Data from an experiment to study factors affecting the production of the
 #' plastic PVC, 3 operators used 8 different devices called resin railcars to
 #' produce PVC. For each of the 24 combinations, two samples were produced.
-#' 
-#' 
+#'
+#'
 #' @name pvc
 #' @docType data
 #' @format Dataset contains the following variables \describe{
@@ -2794,14 +2794,14 @@ NULL
 
 
 #' Activity in pyrimidines
-#' 
+#'
 #' Structural information on 74 2,4-diamino- 5-(substituted benzyl) pyrimidines
 #' used as inhibitors of DHFR in E. coli. There are 3 positions where chemical
 #' activity occurs and 9 attributes per position leading to 27 total
 #' predictors. One predictor had no variability and was removed from the data
 #' set. 26 chemical properties of 74 compounds and an activity level
-#' 
-#' 
+#'
+#'
 #' @name pyrimidines
 #' @docType data
 #' @format A data frame with 74 observations on the following 27 variables.
@@ -2836,13 +2836,13 @@ NULL
 #' @source Jonathan D. Hirst, Ross D. King, Michael J. E. Sternberg (1994)
 #' Quantitative structure-activity relationships by neural networks and
 #' inductive logic programming. I. The inhibition of dihydrofolate reductase by
-#' pyrimidines \url{http://dx.doi.org/10.1007/BF00125375}
+#' pyrimidines \doi{10.1007/BF00125375}
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(pyrimidines)
 #' ## maybe str(pyrimidines) ; plot(pyrimidines) ...
-#' 
+#'
 NULL
 
 
@@ -2850,20 +2850,20 @@ NULL
 
 
 #' Rabbit weight gain by diet and litter
-#' 
+#'
 #' A nutritionist studied the effects of six diets, on weight gain of domestic
 #' rabbits.  From past experience with sizes of litters, it was felt that only
 #' 3 uniform rabbits could be selected from each available litter. There were
 #' ten litters available forming blocks of size three.
-#' 
-#' 
+#'
+#'
 #' @name rabbit
 #' @docType data
 #' @format The variables in the dataset were \describe{ \item{treat}{
 #' Diet a through f}
-#' 
+#'
 #' \item{gain}{ Weight gain}
-#' 
+#'
 #' \item{block}{ Block (10 litters)} }
 #' @source "Experimental Design and Analysis" by M. Lentner and T. Bishop,
 #' Valley Book Company, 1986
@@ -2875,12 +2875,12 @@ NULL
 
 
 #' Rat growth weights affected by additives
-#' 
+#'
 #' The data consist of 5 weekly measurements of body weight for 27 rats. The
 #' first 10 rats are on a control treatment while 7 rats have thyroxine added
 #' to their drinking water. 10 Rats have thiouracil added to their water.
-#' 
-#' 
+#'
+#'
 #' @name ratdrink
 #' @docType data
 #' @format A data frame with 135 observations on the following 4 variables.
@@ -2897,11 +2897,11 @@ NULL
 
 
 #' Effect of toxic agents on rats
-#' 
+#'
 #' An experiment was conducted as part of an investigation to combat the
 #' effects of certain toxic agents.
-#' 
-#' 
+#'
+#'
 #' @name rats
 #' @docType data
 #' @format A data frame with 48 observations on the following 3 variables.
@@ -2919,11 +2919,11 @@ NULL
 
 
 #' Shape and plate effects on current noise in resistors
-#' 
+#'
 #' The \code{resceram} data frame has 12 rows and 3 columns. Shape and plate
 #' effects on current noise in resistors
-#' 
-#' 
+#'
+#'
 #' @name resceram
 #' @docType data
 #' @format This data frame contains the following columns: \describe{
@@ -2941,12 +2941,12 @@ NULL
 
 
 #' Salmonella reverse mutagenicity assay
-#' 
+#'
 #' The data was collected in a salmonella reverse mutagenicity assay where the
 #' numbers of revertant colonies of TA98 Salmonella observed on each of three
 #' replicate plates for different doses of quinoline
-#' 
-#' 
+#'
+#'
 #' @name salmonella
 #' @docType data
 #' @format A data frame with 18 observations on the following 2 variables.
@@ -2962,12 +2962,12 @@ NULL
 
 
 #' School expenditure and test scores from USA in 1994-95
-#' 
+#'
 #' The \code{sat} data frame has 50 rows and 7 columns.  Data were collected to
 #' study the relationship between expenditures on public education and test
 #' results.
-#' 
-#' 
+#'
+#'
 #' @name sat
 #' @docType data
 #' @format This data frame contains the following columns: \describe{
@@ -2991,26 +2991,26 @@ NULL
 
 
 #' Savings rates in 50 countries
-#' 
+#'
 #' The \code{savings} data frame has 50 rows and 5 columns.  The data is
 #' averaged over the period 1960-1970.
-#' 
+#'
 #' Now also appears as \code{LifeCycleSavings} in the \code{datasets} package
-#' 
-#' 
+#'
+#'
 #' @name savings
 #' @docType data
 #' @format This data frame contains the following columns: \describe{
-#' 
+#'
 #' \item{sr}{savings rate - personal saving divided by disposable
 #' income}
-#' 
+#'
 #' \item{pop15}{percent population under age of 15}
-#' 
+#'
 #' \item{pop75}{percent population over age of 75}
-#' 
+#'
 #' \item{dpi}{per-capita disposable income in dollars}
-#' 
+#'
 #' \item{ddpi}{percent growth rate of dpi} }
 #' @source Belsley, D., Kuh. E. and Welsch, R. (1980) "Regression Diagnostics"
 #' Wiley.
@@ -3023,14 +3023,14 @@ NULL
 
 
 #' Car seat position depending driver size
-#' 
+#'
 #' Car drivers like to adjust the seat position for their own comfort. Car
 #' designers would find it helpful to know where different drivers will
 #' position the seat depending on their size and age. Researchers at the
 #' HuMoSim laboratory at the University of Michigan collected data on 38
 #' drivers.
-#' 
-#' 
+#'
+#'
 #' @name seatpos
 #' @docType data
 #' @format The dataset contains the following variables \describe{
@@ -3050,13 +3050,13 @@ NULL
 
 
 #' Germination of seeds depending on moisture and covering
-#' 
+#'
 #' A Biologist analyzed an experiment to determine the effect of moisture
 #' content on seed germination. Eight boxes of 100 seeds each were treated with
 #' the same moisture level. 4 boxes were covered and 4 left uncovered. The
 #' process was repeated at 6 different moisture levels (nonlinear scale).
-#' 
-#' 
+#'
+#'
 #' @name seeds
 #' @docType data
 #' @format A data frame with 48 observations on the following 3 variables.
@@ -3067,10 +3067,10 @@ NULL
 #' Chapman Hall.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(seeds)
 #' ## maybe str(seeds) ; plot(seeds) ...
-#' 
+#'
 NULL
 
 
@@ -3078,11 +3078,11 @@ NULL
 
 
 #' Semiconductor split-plot experiment
-#' 
+#'
 #' The \code{semicond} data frame has 48 rows and 5 columns.
-#' 
+#'
 #' Also found in the \code{SASmixed} package
-#' 
+#'
 #' @name semicond
 #' @docType data
 #' @format This data frame contains the following columns: \describe{
@@ -3102,7 +3102,7 @@ NULL
 
 
 #' Post traumatic stress disorder in abused adult females
-#' 
+#'
 #' The data for this example come from a study of the effects of childhood
 #' sexual abuse on adult females. 45 women being treated at a clinic, who
 #' reported childhood sexual abuse, were measured for post traumatic stress
@@ -3111,14 +3111,14 @@ NULL
 #' abuse were also measured. The full study was more complex than reported here
 #' and so readers interested in the subject matter should refer to the original
 #' article.
-#' 
-#' 
+#'
+#'
 #' @name sexab
 #' @docType data
 #' @format The variables in the dataset are \describe{
-#' 
+#'
 #' \item{cpa}{ Childhood physical abuse on standard scale}
-#' 
+#'
 #' \item{ptsd}{ Post-traumatic stress disorder on standard scale}
 #' \item{csa}{ Childhood sexual abuse - abused or not abused} }
 #' @source N. Rodriguez and S. Ryan and H. Vande Kemp and D. Foy (1997)
@@ -3133,13 +3133,13 @@ NULL
 
 
 #' Marital sex ratings
-#' 
+#'
 #' Data from a questionaire from 91 couples in the Tucson, Arizona area.
 #' Subjects answered the question "Sex is fun for me and my partner". The
 #' possible answers were "never or occasionally","fairly often","very often"
 #' and "almost always"
-#' 
-#' 
+#'
+#'
 #' @name sexfun
 #' @docType data
 #' @format A data frame with 16 observations on the following 3 variables.
@@ -3157,13 +3157,13 @@ NULL
 
 
 #' Snail production
-#' 
+#'
 #' A study was conducted to optimize snail production for consumption. The
 #' percentage water content of the tissues of snails grown under three
 #' different levels of relative humidity and two different temperatures was
 #' recorded. For each combination, 4 snails were observed.
-#' 
-#' 
+#'
+#'
 #' @name snail
 #' @docType data
 #' @format A data frame with 24 observations on the following 3 variables.
@@ -3173,10 +3173,10 @@ NULL
 #' @source Unknown
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(snail)
 #' ## maybe str(snail) ; plot(snail) ...
-#' 
+#'
 NULL
 
 
@@ -3184,13 +3184,13 @@ NULL
 
 
 #' Solder skips in printing circuit boards
-#' 
+#'
 #' ATT ran an experiment varying five factors relevant to a wave-soldering
 #' procedure for mounting components on printed circuit boards.  The response
 #' variable, skips, is a count of how many solder skips appeared to a visual
 #' inspection.
-#' 
-#' 
+#'
+#'
 #' @name solder
 #' @docType data
 #' @format A data frame with 900 observations on the following 6 variables.
@@ -3207,10 +3207,10 @@ NULL
 #' 113-128.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(solder)
 #' ## maybe str(solder) ; plot(solder) ...
-#' 
+#'
 NULL
 
 
@@ -3218,12 +3218,12 @@ NULL
 
 
 #' Sonoluminescence
-#' 
+#'
 #' The \code{sono} data frame has 16 rows and 8 columns.  Sonoluminescence is
 #' the process of turning sound energy into light.  An experiment was conducted
 #' to study factors affecting this process.
-#' 
-#' 
+#'
+#'
 #' @name sono
 #' @docType data
 #' @format This data frame contains the following columns: \describe{
@@ -3248,11 +3248,11 @@ NULL
 
 
 #' Germination failures for soybean seeds
-#' 
+#'
 #' An experiment was conducted to compare the germination rates of the five
 #' varieties of soybean. Five plots were available.
-#' 
-#' 
+#'
+#'
 #' @name soybean
 #' @docType data
 #' @format A data frame with 25 observations on the following 3 variables.
@@ -3271,10 +3271,10 @@ NULL
 
 
 #' Teaching methods in Economics
-#' 
+#'
 #' A study to determine the effectiveness of a new teaching method in Economics
-#' 
-#' 
+#'
+#'
 #' @name spector
 #' @docType data
 #' @format A data frame with 32 observations on the following 4 variables.
@@ -3292,13 +3292,13 @@ NULL
 
 
 #' Speedometer cable shrinkage
-#' 
+#'
 #' Speedometer cables can be noisy because of shrinkage in the plastic casing
 #' material. An experiment was conducted to find out what caused shrinkage by
 #' screening a large number of factors.  The engineers started with 15
 #' different factors.
-#' 
-#' 
+#'
+#'
 #' @name speedo
 #' @docType data
 #' @format The dataset contains the following variables: (variables a-o are 2
@@ -3323,12 +3323,12 @@ NULL
 
 
 #' Star temperatures and light intensites
-#' 
+#'
 #' Data on the log of the surface temperature and the log of the light
 #' intensity of 47 stars in the star cluster CYG OB1, which is in the direction
 #' of Cygnus,
-#' 
-#' 
+#'
+#'
 #' @name star
 #' @docType data
 #' @format A data frame with 47 observations on the following 3 variables.
@@ -3338,10 +3338,10 @@ NULL
 #' Detection. New York: Wiley.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(star)
 #' ## maybe str(star) ; plot(star) ...
-#' 
+#'
 NULL
 
 
@@ -3349,10 +3349,10 @@ NULL
 
 
 #' Marks in a statistics class
-#' 
+#'
 #' Marks from Statistics 500 one year at the University of Michigan
-#' 
-#' 
+#'
+#'
 #' @name stat500
 #' @docType data
 #' @format A data frame with 55 observations on the following 4 variables.
@@ -3362,10 +3362,10 @@ NULL
 #' @source Julian Faraway
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(stat500)
 #' ## maybe str(stat500) ; plot(stat500) ...
-#' 
+#'
 NULL
 
 
@@ -3373,12 +3373,12 @@ NULL
 
 
 #' Stepping and effect on heart rate
-#' 
+#'
 #' An experiment was conducted to explore the nature of the relationship
 #' between a person's heart rate and the frequency at which that person stepped
 #' up and down on steps of various heights.
-#' 
-#' 
+#'
+#'
 #' @name stepping
 #' @docType data
 #' @format A data frame with 30 observations on the following 6 variables.
@@ -3393,10 +3393,10 @@ NULL
 #' @source Unknown
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(stepping)
 #' ## maybe str(stepping) ; plot(stepping) ...
-#' 
+#'
 NULL
 
 
@@ -3404,9 +3404,9 @@ NULL
 
 
 #' Strong interaction experiment data
-#' 
+#'
 #' Example Dataset from "Practical Regression and Anova"
-#' 
+#'
 #' @name strongx
 #' @docType data
 #' @format \describe{Dataframe with 10 cases
@@ -3424,11 +3424,11 @@ NULL
 
 
 #' Suicide method data from the UK
-#' 
+#'
 #' One year of suicide data from the United Kingdom crossclassified by sex, age
 #' and method.
-#' 
-#' 
+#'
+#'
 #' @name suicide
 #' @docType data
 #' @format A data frame with 36 observations on the following 4 variables.
@@ -3454,11 +3454,11 @@ NULL
 
 
 #' Study of teenage gambling in Britain
-#' 
+#'
 #' The \code{teengamb} data frame has 47 rows and 5 columns. A survey was
 #' conducted to study teenage gambling in Britain.
-#' 
-#' 
+#'
+#'
 #' @name teengamb
 #' @docType data
 #' @format This data frame contains the following columns: \describe{
@@ -3476,15 +3476,15 @@ NULL
 
 
 #' Toenail infection treatment study
-#' 
+#'
 #' The data come from a Multicenter study comparing two oral treatments for
 #' toenail infection. Patients were evaluated for the degree of separation of
 #' the nail. Patients were randomized into two treatments and were followed
 #' over seven visits - four in the first year and yearly thereafter. The
 #' patients have not been treated prior to the first visit so this should be
 #' regarded as the baseline.
-#' 
-#' 
+#'
+#'
 #' @name toenail
 #' @docType data
 #' @format A data frame with 1908 observations on the following 5 variables.
@@ -3496,7 +3496,7 @@ NULL
 #' @references Lesaffre, E. and Spiessens, B. (2001). On the effect of the
 #' number of quadrature points in a logistic random-effects model: An example.
 #' Journal of the Royal Statistical Society, Series C, 50, 325-335.
-#' 
+#'
 #' G. Fitzmaurice, N. Laird and J. Ware (2004) Applied Longitudinal Analysis,
 #' Wiley
 #' @source De Backer, M., De Vroey, C., Lesaffre, E., Scheys, I., and De
@@ -3512,12 +3512,12 @@ NULL
 
 
 #' Survival of trout eggs depending on time and location
-#' 
+#'
 #' Boxes of trout eggs were buried at five different stream locations and
 #' retrieved at 4 different times. The number of surviving eggs was recorded.
 #' The box was not returned to the stream.
-#' 
-#' 
+#'
+#'
 #' @name troutegg
 #' @docType data
 #' @format A data frame with 20 observations on the following 4 variables.
@@ -3539,13 +3539,13 @@ NULL
 
 
 #' Truck leaf spring experiment
-#' 
+#'
 #' Data on an experiment concerning the production of leaf springs for trucks.
 #' A \eqn{2^{5-1}} fractional factorial experiment with 3 replicates was
 #' carried out with objective of recommending production settings to achieve a
 #' free height as close as possible to 8 inches.
-#' 
-#' 
+#'
+#'
 #' @name truck
 #' @docType data
 #' @format A data frame with 48 observations on the following 6 variables.
@@ -3569,10 +3569,10 @@ NULL
 
 
 #' Incubation temperature and the sex of turtles
-#' 
+#'
 #' Incubation temperature can affect the sex of turtles. There are 3
 #' independent replicates for each temperature.
-#' 
+#'
 #' @name turtle
 #' @docType data
 #' @format A data frame with 15 observations on the following 3 variables.
@@ -3583,9 +3583,9 @@ NULL
 #' Stephenson. Developed as part of NSF/ILI grant DUE9751644.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(turtle)
-#' 
+#'
 NULL
 
 
@@ -3593,10 +3593,10 @@ NULL
 
 
 #' Life, TVs and Doctors
-#' 
+#'
 #' Life expectancy, doctors and televisions collected on 38 countries in 1993
-#' 
-#' 
+#'
+#'
 #' @name tvdoctor
 #' @docType data
 #' @format A data frame with 38 observations on the following 3 variables.
@@ -3606,10 +3606,10 @@ NULL
 #' @source Unknown, data for illustration purposes only
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(tvdoctor)
 #' ## maybe str(tvdoctor) ; plot(tvdoctor) ...
-#' 
+#'
 NULL
 
 
@@ -3617,10 +3617,10 @@ NULL
 
 
 #' Twin IQs from Burt
-#' 
+#'
 #' Study of IQ in twins reared apart
-#' 
-#' 
+#'
+#'
 #' @name twins
 #' @docType data
 #' @format A dataframe with the following variables: \describe{
@@ -3628,7 +3628,7 @@ NULL
 #' \item{Biological}{IQ of the biological child}
 #' \item{Social}{social class of natural parents}}
 #' @references Weisberg, S. (2014). Applied Linear Regression, 4th edition. Hoboken NJ: Wiley.
-#' @source Burt, C. (1966). The genetic estimation of differences in intelligence: 
+#' @source Burt, C. (1966). The genetic estimation of differences in intelligence:
 #' A study of monozygotic twins reared together and apart. Br. J. Psych., 57, 147-153.
 #' @keywords datasets
 NULL
@@ -3638,12 +3638,12 @@ NULL
 
 
 #' UNC student opinions about the Vietnam War
-#' 
+#'
 #' A student newspaper conducted a survey of student opinions about the Vietnam
 #' War in May 1967. Responses were classified by sex, year in the program and
 #' one of four opinions. The survey was voluntary.
-#' 
-#' 
+#'
+#'
 #' @name uncviet
 #' @docType data
 #' @format A data frame with 40 observations on the following 4 variables.
@@ -3665,17 +3665,17 @@ NULL
 
 
 #' Weekly wages of US male workers in 1988
-#' 
+#'
 #' The \code{uswages} data frame has 2000 rows and 10 columns. Weekly Wages for
 #' US male workers sampled from the Current Population Survey in 1988.
-#' 
-#' 
+#'
+#'
 #' @name uswages
 #' @docType data
 #' @format This data frame contains the following columns: \describe{
 #' \item{wage}{ Real weekly wages in dollars (deflated by personal
 #' consumption expenditures - 1992 base year)
-#' 
+#'
 #' } \item{educ}{ Years of education } \item{exper}{ Years of
 #' experience } \item{race}{ 1 if Black, 0 if White (other races not in
 #' sample) } \item{smsa}{ 1 if living in Standard Metropolitan
@@ -3693,13 +3693,13 @@ NULL
 
 
 #' Acuity of vision in response to light flash
-#' 
+#'
 #' The acuity of vision for seven subjects was tested. The response is the lag
 #' in milliseconds between a light flash and a response in the cortex of the
 #' eye. Each eye is tested at four different powers of lens. An object at the
 #' distance of the second number appears to be at distance of the first number.
-#' 
-#' 
+#'
+#'
 #' @name vision
 #' @docType data
 #' @format A data frame with 56 observations on the following 4 variables.
@@ -3712,10 +3712,10 @@ NULL
 #' London: Chapman & Hall.
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(vision)
 #' ## maybe str(vision) ; plot(vision) ...
-#' 
+#'
 NULL
 
 
@@ -3723,10 +3723,10 @@ NULL
 
 
 #' resitivity of wafer in semiconductor experiment
-#' 
+#'
 #' A full factorial experiment with four two-level predictors.
-#' 
-#' 
+#'
+#'
 #' @name wafer
 #' @docType data
 #' @format A data frame with 16 observations on the following 5 variables.
@@ -3744,13 +3744,13 @@ NULL
 
 
 #' Defects in a wave soldering process
-#' 
+#'
 #' Components are attached to an electronic circuit card assembly by a
 #' wave-soldering process. The soldering process involves baking and preheating
 #' the circuit card and then passing it through a solder wave by conveyor.
 #' Defect arise during the process. Design is \eqn{2^{7-3}} with 3 replicates.
-#' 
-#' 
+#'
+#'
 #' @name wavesolder
 #' @docType data
 #' @format A data frame with 16 observations on the following 10 variables.
@@ -3776,7 +3776,7 @@ NULL
 
 
 #' Wisconsin breast cancer database
-#' 
+#'
 #' Data come from a study of breast cancer in Wisconsin. There are 681 cases of
 #' potentially cancerous tumors of which 238 are actually malignant.
 #' Determining whether a tumor is really malignant is traditionally determined
@@ -3784,11 +3784,11 @@ NULL
 #' determine whether a new procedure called fine needle aspiration which draws
 #' only a small sample of tissue could be effective in determining tumor
 #' status.
-#' 
+#'
 #' The predictor values are determined by a doctor observing the cells and
 #' rating them on a scale from 1 (normal) to 10 (most abnormal) with respect to
 #' the particular characteristic.
-#' 
+#'
 #' @name wbca
 #' @docType data
 #' @format A data frame with 681 observations on the following 10 variables.
@@ -3809,12 +3809,12 @@ NULL
 
 
 #' Western Collaborative Group Study
-#' 
+#'
 #' 3154 healthy young men aged 39-59 from the San Francisco area were assessed
 #' for their personality type. All were free from coronary heart disease at the
 #' start of the research. Eight and a half years later change in this situation
 #' was recorded.
-#' 
+#'
 #' The WCGS began in 1960 with 3,524 male volunteers who were employed by 11
 #' California companies. Subjects were 39 to 59 years old and free of heart
 #' disease as determined by electrocardiogram. After the initial screening, the
@@ -3829,7 +3829,7 @@ NULL
 #' and alcohol use. Later surveys added data on anthropometry, triglycerides,
 #' Jenkins Activity Survey, and caffeine use. Average follow-up continued for
 #' 8.5 years with repeat examinations
-#' 
+#'
 #' @name wcgs
 #' @docType data
 #' @format A data frame with 3154 observations on the following 13 variables.
@@ -3855,10 +3855,10 @@ NULL
 #' @source Statistics for Epidemiology by N. Jewell (2004)
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(wcgs)
 #' ## maybe str(wcgs) ; plot(wcgs) ...
-#' 
+#'
 NULL
 
 
@@ -3866,10 +3866,10 @@ NULL
 
 
 #' welding strength DOE
-#' 
+#'
 #' An experiment to investigate factors affecting welding strength.
-#' 
-#' 
+#'
+#'
 #' @name weldstrength
 #' @docType data
 #' @format A data frame with 16 observations on the following 10 variables.
@@ -3888,10 +3888,10 @@ NULL
 
 
 #' Insect damage to wheat by variety
-#' 
+#'
 #' Insect damage to wheat by variety
-#' 
-#' 
+#'
+#'
 #' @name wheat
 #' @docType data
 #' @format A data frame with 13 observations on the following 2 variables.
@@ -3900,10 +3900,10 @@ NULL
 #' @source Unknown
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(wheat)
 #' ## maybe str(wheat) ; plot(wheat) ...
-#' 
+#'
 NULL
 
 
@@ -3911,11 +3911,11 @@ NULL
 
 
 #' Data on players from the 2010 World Cup
-#' 
+#'
 #' Data on players from the 2010 World Cup
-#' 
+#'
 #' None
-#' 
+#'
 #' @name worldcup
 #' @docType data
 #' @format A data frame with 595 observations on the following 7 variables.
@@ -3928,10 +3928,10 @@ NULL
 #' @source Lost
 #' @keywords datasets
 #' @examples
-#' 
+#'
 #' data(worldcup)
 #' ## maybe str(worldcup) ; plot(worldcup) ...
-#' 
+#'
 NULL
 
 

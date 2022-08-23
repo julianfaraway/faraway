@@ -6,8 +6,8 @@
 \title{Billionaires' wealth and age}
 \format{
 A data frame with 232 observations on the following 3 variables.
-\describe{ 
-\item{wealth}{Billions of dollars} 
+\describe{
+\item{wealth}{Billions of dollars}
 \item{age}{age in years} \item{region}{a factor with levels \code{A}, Asia,
 \code{E}, Europe, \code{M}, Middle East, \code{O} Other, \code{U} USA} }
 }

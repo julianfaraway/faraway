@@ -29,8 +29,8 @@ Computes the variance inflation factors
 
 data(stackloss)
 vif(stackloss[,-4])
-#  Air.Flow Water.Temp Acid.Conc. 
-#    2.9065     2.5726     1.3336 
+#  Air.Flow Water.Temp Acid.Conc.
+#    2.9065     2.5726     1.3336
 
 }
 \author{

@@ -11,7 +11,7 @@ temperatures in degrees F in Ann Arbor} }
 }
 \source{
 United States Historical Climatology Network:
-\url{http://www.ncdc.noaa.gov/oa/climate/research/ushcn/ushcn.html}
+\url{https://www.ncei.noaa.gov/products/land-based-station/us-historical-climatology-network}
 }
 \description{
 The data comes from the U.S. Historical Climatology Network.

@@ -11,7 +11,7 @@ A dataframe with the following variables: \describe{
 \item{Social}{social class of natural parents}}
 }
 \source{
-Burt, C. (1966). The genetic estimation of differences in intelligence: 
+Burt, C. (1966). The genetic estimation of differences in intelligence:
 A study of monozygotic twins reared together and apart. Br. J. Psych., 57, 147-153.
 }
 \description{
