@@ -7,6 +7,7 @@ Errata are corrected as found and incorporated into newly printed copies of the 
 means that not all the errata listed below exist in your copy of the book. If you see any
 errors not listed below, please let me know.
 
+- p6. The `c()` vector is of length four.
 - p10. The coefficient for `usageurban` should be beta_3
 - p29. The log-likelihood equation should have the final subscript i on the eta and not on the 'e'.
 - p36. Replace
