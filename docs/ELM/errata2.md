@@ -42,12 +42,7 @@ gdf <- group_by(wcgsm, ntile(linpred,100))
 - p42. The change in the H-L statistic as described on the previous page now means the result in statistically significant. Nevertheless, we are not inclined to change the model because we have no clear idea how to improve it and the deficiency is not serious. This change in the H-L statistic due to a change in the binning demonstrates a problem in with its stability. We are not convinced of its value.
 - p55. The R code to compute the Pearson chi-squared statistic is missing. It is `sum(residuals(lmod,type="pearson")^2)`
 - p64. There is a single zero response value in beta regression model in this example. As explained in the help page for betar() this causes some difficulties. If this point is excluded, then the fit becomes similar to the quasibinomial as claimed in the text.
-- p106 There is a missing ! in the denominator of the first equation:
-
-$$
- {n! \over \prod_i \prod_j y_{ij}!} \prod_i \prod_j p_{ij}^{y_{ij}}
-$$
-
+- p106 There is a missing ! in the denominator of the first equation: ${n! \over \prod_i \prod_j y_{ij}!} \prod_i \prod_j p_{ij}^{y_{ij}}$
 - p170. The `robust` package has been superceded by the `robustbase` package.
 - p188. The scale of the Gamma in the compound Poisson-Gamma distribution is $\lambda^{-1}=\phi(p-1)\mu^{p-1}$
 if defined in the same sense as on p175.
