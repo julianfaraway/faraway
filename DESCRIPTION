@@ -12,4 +12,4 @@ LazyData: yes
 Imports: methods, lme4, nlme
 Suggests: leaps
 Encoding: UTF-8
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3

@@ -3,7 +3,7 @@
 \docType{data}
 \name{fat}
 \alias{fat}
-\title{Percentage of Body Fat and Body Measurements}
+\title{Percentage of Body Fat and Body Measurements in Men}
 \format{
 A data frame with 252 observations on the following 18 variables.
 \describe{ \item{brozek}{ Percent body fat using Brozek's equation,
