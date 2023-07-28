@@ -3913,7 +3913,8 @@ NULL
 #' \item{ankle}{Ankle circumference (cm)} }
 #' @source Roger W. Johnson (2021): Fitting Percentage of Body Fat to Simple Body 
 #' Measurements: College Women, Journal of Statistics and Data Science Education, 
-#' DOI: 10.1080/26939169.2021.1971585
+#' DOI: 10.1080/26939169.2021.1971585 (Note that I have changed some
+#' of the variable names to correspond with the older fat data for men)
 #' @seealso \code{\link{fat}}
 #' @keywords datasets
 NULL
