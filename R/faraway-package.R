@@ -3907,11 +3907,14 @@ NULL
 #' \item{mthigh}{(Middle Thigh) Measurement midway between the midpoint 
 #' of the inguinal crease and the proximal border of the patella (cm)}
 #' \item{dthigh}{(Distal Thigh) Measurement proximal to the femoral epicondyles (cm)}
-#' \item{wrist}{Wrist circumference (cm) distal to the styloid processes} }
+#' \item{wrist}{Wrist circumference (cm) distal to the styloid processes} 
 #' \item{knee}{Knee circumference (cm)} 
 #' \item{elbow}{A minimal circumference measurement with the elbow extended (cm)}
-#' \item{ankle}{ Ankle circumference (cm)} 
-#' @source Johnson R. Journal of Statistics Education v.4, n.1 (1996)
+#' \item{ankle}{Ankle circumference (cm)} }
+#' @source Roger W. Johnson (2021): Fitting Percentage of Body Fat to Simple Body 
+#' Measurements: College Women, Journal of Statistics and Data Science Education, 
+#' DOI: 10.1080/26939169.2021.1971585
+#' @seealso \code{\link{fat}}
 #' @keywords datasets
 NULL
 
