@@ -1596,12 +1596,13 @@ NULL
 
 
 
-#' love, work and happiness
+#' MBA students experience love, sex, work and happiness
 #'
 #' Data were collected from 39 students in a University of Chicago MBA class
 #'
 #'
 #' @name happy
+#' @rdname mba
 #' @docType data
 #' @format A data frame with 39 observations on the following 5 variables.
 #' \describe{ \item{happy}{Happiness on a 10 point scale where 10 is most
@@ -1613,10 +1614,6 @@ NULL
 #' JASA, 88, 881-889
 #' @keywords datasets
 NULL
-
-
-
-
 
 #' Treatment of insulin dependent diabetic children
 #'
