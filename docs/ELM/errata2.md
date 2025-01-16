@@ -44,6 +44,7 @@ gdf <- group_by(wcgsm, ntile(linpred,100))
 - p64. There is a single zero response value in beta regression model in this example. As explained in the help page for betar() this causes some difficulties. If this point is excluded, then the fit becomes similar to the quasibinomial as claimed in the text.
 - p106 There is a missing ! in the denominator of the first equation: ${n! \over \prod_i \prod_j y_{ij}!} \prod_i \prod_j p_{ij}^{y_{ij}}$
 - p170. The `robust` package has been superceded by the `robustbase` package.
+- p171. The density of the Weibull is $\alpha \beta^{-\alpha} y^{\alpha-1} e^{-(y/\beta)^\alpha}$
 - p188. The scale of the Gamma in the compound Poisson-Gamma distribution is $\lambda^{-1}=\phi(p-1)\mu^{p-1}$
 if defined in the same sense as on p175.
 - p198. In the first equation needs some added parentheses in the denominator as in: $(2\pi)^{n/2}$.

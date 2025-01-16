@@ -1592,17 +1592,12 @@ NULL
 #' @keywords datasets
 NULL
 
-
-
-
-
 #' MBA students experience love, sex, work and happiness
 #'
 #' Data were collected from 39 students in a University of Chicago MBA class
 #'
 #'
 #' @name happy
-#' @rdname mba
 #' @docType data
 #' @format A data frame with 39 observations on the following 5 variables.
 #' \describe{ \item{happy}{Happiness on a 10 point scale where 10 is most
@@ -1614,6 +1609,9 @@ NULL
 #' JASA, 88, 881-889
 #' @keywords datasets
 NULL
+
+#' @rdname happy
+"mba"
 
 #' Treatment of insulin dependent diabetic children
 #'
@@ -3206,7 +3204,23 @@ NULL
 #'
 NULL
 
-
+#' Block design task testing child ability
+#' 
+#' Behavioural scientists at Macquarie University conducted an
+#' experiment
+#'
+#' @name solv
+#' @docType data
+#' @format A data frame with 24 observations and 3 variables.
+#' \describe{
+#' \item{group}{Solution attempted first by row(r) or corner(c)}
+#' \item{time}{Time taken to complete the task in seconds}
+#' \item{eft}{Score on the embedded figures test}
+#' }
+#' @source Statistical Modelling in GLIM (1989) 
+#' M. Aitkin and D. Anderson and B. Francis and J. Hinde
+#' Oxford University Press
+NULL
 
 
 
