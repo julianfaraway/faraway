@@ -17,7 +17,7 @@ numeric vector} \item{nasal.length}{a numeric vector}
 \item{lacrymal.width}{a numeric vector}
 \item{zygomatic.width}{a numeric vector}
 \item{orbital.width}{a numeric vector}
-\item{.rostral.width}{a numeric vector}
+\item{rostral.width}{a numeric vector}
 \item{occipital.depth}{a numeric vector}
 \item{crest.width}{a numeric vector}
 \item{foramina.length}{a numeric vector}

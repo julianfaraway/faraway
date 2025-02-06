@@ -485,6 +485,7 @@ pfround <- function (x, digits) {
 
 # Taken from arm package
 
+#' @noRd
 as.matrix.VarCorr <- function (varc, useScale, digits){
 # VarCorr function for lmer objects, altered as follows:
 #   1.  specify rounding

@@ -21,7 +21,7 @@ attitudes to debt (high values=favourable to debt} }
 }
 \source{
 Lea, Webley & Walker, 1995, Journal of Economic Psychology, 16,
-181-201 Data obtained from \url{http://people.exeter.ac.uk/SEGLea/}.
+181-201 Data obtained from \url{http://au.exeter.ac.uk/SEGLea/}.
 }
 \description{
 The data arise from a large postal survey on the psychology of debt.

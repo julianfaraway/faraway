@@ -854,7 +854,7 @@ NULL
 #' of control scale (high values=internal)} \item{prodebt}{score on a scale of
 #' attitudes to debt (high values=favourable to debt} }
 #' @source Lea, Webley & Walker, 1995, Journal of Economic Psychology, 16,
-#' 181-201 Data obtained from \url{http://people.exeter.ac.uk/SEGLea/}.
+#' 181-201 Data obtained from \url{http://au.exeter.ac.uk/SEGLea/}.
 #' @keywords datasets
 NULL
 
@@ -1898,7 +1898,7 @@ NULL
 #' \item{lacrymal.width}{a numeric vector}
 #' \item{zygomatic.width}{a numeric vector}
 #' \item{orbital.width}{a numeric vector}
-#' \item{.rostral.width}{a numeric vector}
+#' \item{rostral.width}{a numeric vector}
 #' \item{occipital.depth}{a numeric vector}
 #' \item{crest.width}{a numeric vector}
 #' \item{foramina.length}{a numeric vector}
@@ -3207,7 +3207,8 @@ NULL
 #' Block design task testing child ability
 #' 
 #' Behavioural scientists at Macquarie University conducted an
-#' experiment
+#' experiment to test the time taken to perform a block design task with
+#' 24 fifth grade children (12 boys and 12 girls).
 #'
 #' @name solv
 #' @docType data
@@ -3215,7 +3216,9 @@ NULL
 #' \describe{
 #' \item{group}{Solution attempted first by row(r) or corner(c)}
 #' \item{time}{Time taken to complete the task in seconds}
-#' \item{eft}{Score on the embedded figures test}
+#' \item{eft}{Score on the embedded figures test which is a 
+#' measure of difficulty in abstracting logical structure of 
+#' a problem from its context.}
 #' }
 #' @source Statistical Modelling in GLIM (1989) 
 #' M. Aitkin and D. Anderson and B. Francis and J. Hinde
