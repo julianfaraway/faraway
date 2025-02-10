@@ -417,7 +417,7 @@ setMethod("sumary", signature(object = "merMod"),
     out$coef <- coefs[,"coef.est"]
     out$se <- coefs[,"coef.se"]
     cat("\nRandom Effects:\n")
-    vc <- as.matrix.VarCorr (VarCorr (object), useScale=useScale, digits)
+    vc <- VarCorrmat (VarCorr (object), useScale=useScale, digits)
     print (vc[,c(1:2,4:ncol(vc))], quote=FALSE)
     out$ngrps <- lapply(object@flist, function(x) length(levels(x)))
     is_REML <- isREML(object)
@@ -483,20 +483,22 @@ pfround <- function (x, digits) {
 }
 
 
-# Taken from arm package
-
-#' @noRd
-as.matrix.VarCorr <- function (varc, useScale, digits){
-# VarCorr function for lmer objects, altered as follows:
-#   1.  specify rounding
-#   2.  print statement at end is removed
-#   3.  reMat is returned
-#   4.  last line kept in reMat even when there's no error term
+#' Helper function to convert VarCorr objects
+#'
+#' Used internally when showing summary for lmer objects
+#'
+#'
+#' @param varc a numeric vector
+#' @param useScale a numeric vector
+#' @param digits a numeric vector
+#' @return a matrix
+#' @author copied from the arm package
+#' @keywords internal
+#' @export VarCorrmat
+VarCorrmat <- function (varc, useScale, digits){
                   sc <- attr(varc, "sc")[[1]]
                   if(is.na(sc)) sc <- 1
-#                  recorr <- lapply(varc, function(el) el@factors$correlation)
                   recorr <- lapply(varc, function(el) attr(el, "correlation"))
-                  #reStdDev <- c(lapply(recorr, slot, "sd"), list(Residual = sc))
                   reStdDev <- c(lapply(varc, function(el) attr(el, "stddev")), list(Residual = sc))
                   reLens <- unlist(c(lapply(reStdDev, length)))
                   reMat <- array('', c(sum(reLens), 4),
@@ -504,8 +506,6 @@ as.matrix.VarCorr <- function (varc, useScale, digits){
                                       c("Groups", "Name", "Variance", "Std.Dev.")))
                   reMat[1+cumsum(reLens)-reLens, 1] <- names(reLens)
                   reMat[,2] <- c(unlist(lapply(reStdDev, names)), "")
-#                  reMat[,3] <- format(unlist(reStdDev)^2, digits = digits)
-#                  reMat[,4] <- format(unlist(reStdDev), digits = digits)
                   reMat[,3] <- fround(unlist(reStdDev)^2, digits)
                   reMat[,4] <- fround(unlist(reStdDev), digits)
                   if (any(reLens > 1)) {
@@ -515,7 +515,6 @@ as.matrix.VarCorr <- function (varc, useScale, digits){
                                   lapply(recorr,
                                          function(x, maxlen) {
                                              x <- as(x, "matrix")
-#                                             cc <- format(round(x, 3), nsmall = 3)
                                              cc <- fround (x, digits)
                                              cc[!lower.tri(cc)] <- ""
                                              nr <- dim(cc)[1]
@@ -525,7 +524,6 @@ as.matrix.VarCorr <- function (varc, useScale, digits){
                       colnames(corr) <- c("Corr", rep("", maxlen - 1))
                       reMat <- cbind(reMat, rbind(corr, rep("", ncol(corr))))
                   }
-#                  if (!useScale) reMat <- reMat[-nrow(reMat),]
           if (useScale<0) reMat[nrow(reMat),] <- c ("No residual sd", rep("",ncol(reMat)-1))
           return (reMat)
       }

@@ -3,6 +3,7 @@
 S3method(vif,default)
 S3method(vif,lm)
 export(Cpplot)
+export(VarCorrmat)
 export(fround)
 export(halfnorm)
 export(ilogit)
