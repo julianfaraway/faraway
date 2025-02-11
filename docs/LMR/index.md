@@ -16,8 +16,8 @@ Third Edition
 
 Published 27th February 2025 and available from [Routledge](http://www.routledge.com/9781032583983)
 
--   [Table of Contents and R scripts](toc3.md)
--   [Preface](preface3.md)
+-   [Table of Contents and R scripts](toc3.html)
+-   [Preface](preface3.html)
 
 Second Edition
 --------------
